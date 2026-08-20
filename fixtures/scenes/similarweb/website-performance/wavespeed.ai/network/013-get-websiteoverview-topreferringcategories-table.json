@@ -1,0 +1,31 @@
+{
+  "FromAlternativeSources": false,
+  "TotalCount": 0,
+  "TotalTopLevelCount": 0,
+  "Data": [
+    {
+      "Share": 0.4280627953457043,
+      "Category": "Unknown"
+    },
+    {
+      "Share": 0.2635856584040779,
+      "Category": "Computers_Electronics_and_Technology/Computers_Electronics_and_Technology"
+    },
+    {
+      "Share": 0.10411418964916798,
+      "Category": "Computers_Electronics_and_Technology/Programming_and_Developer_Software"
+    },
+    {
+      "Share": 0.05701196806358672,
+      "Category": "Finance/Banking_Credit_and_Lending"
+    },
+    {
+      "Share": 0.029983530656865782,
+      "Category": "Computers_Electronics_and_Technology/Computer_Security"
+    },
+    {
+      "Share": 0.020721856682010594,
+      "Category": "Computers_Electronics_and_Technology/Social_Networks_and_Online_Communities"
+    }
+  ]
+}

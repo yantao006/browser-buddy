@@ -1,0 +1,289 @@
+{
+  "id": "similarweb/website-performance/wavespeed.ai",
+  "source": "similarweb",
+  "pageType": "website-performance",
+  "subject": "wavespeed.ai",
+  "url": "https://sim.3ue.co/#/digitalsuite/websiteanalysis/overview/website-performance/*/999/3m?webSource=Total&key=wavespeed.ai",
+  "title": "网站表现",
+  "capturedAt": "2026-08-19T01:13:42.993Z",
+  "locale": "zh-cn",
+  "actions": [
+    {
+      "type": "goto",
+      "url": "https://sim.3ue.co/#/digitalsuite/websiteanalysis/overview/website-performance/*/999/3m?webSource=Total&key=wavespeed.ai"
+    },
+    {
+      "type": "wait",
+      "seconds": 20,
+      "reason": "wait until website-performance widgets render"
+    }
+  ],
+  "domPath": "dom.html",
+  "expectedPath": "expected.json",
+  "network": [
+    {
+      "id": "001",
+      "url": "https://sim.3ue.co/api/WebsiteOverview/getsimilarsites?key=wavespeed.ai&limit=5",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/001-get-api-websiteoverview-getsimilarsites.json"
+    },
+    {
+      "id": "002",
+      "url": "https://sim.3ue.co/api/api-management/user-keys",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/002-get-api-api-management-user-keys.json"
+    },
+    {
+      "id": "003",
+      "url": "https://sim.3ue.co/api/WebsiteOverview/getheader?keys=wavespeed.ai&mainDomainOnly=true&includeCrossData=true",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/003-get-api-websiteoverview-getheader.json"
+    },
+    {
+      "id": "004",
+      "url": "https://sim.3ue.co/api/WebsiteOverview/getheader?keys=wavespeed.ai&mainDomainOnly=false&includeCrossData=true",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/004-get-api-websiteoverview-getheader.json"
+    },
+    {
+      "id": "005",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverview/EngagementVisits/SingleMetric?country=999&from=2026%7C05%7C01&to=2026%7C07%7C31&keys=wavespeed.ai&webSource=Total&isWindow=false&includeSubDomains=true&timeGranularity=Monthly&ShouldGetVerifiedData=true",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/005-get-websiteoverview-engagementvisits-singlemetric.json"
+    },
+    {
+      "id": "006",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverview/EngagementDesktopVsMobileVisits/PieChart?country=999&from=2026%7C05%7C01&to=2026%7C07%7C31&keys=wavespeed.ai&webSource=Total&isWindow=false&includeSubDomains=true&timeGranularity=Monthly&ShouldGetVerifiedData=true",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/006-get-websiteoverview-engagementdesktopvsmobilevisits-piechart.json"
+    },
+    {
+      "id": "007",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverview/WebRanks/SingleMetric?country=999&from=2026%7C05%7C01&to=2026%7C07%7C31&keys=wavespeed.ai&webSource=Total&isWindow=false&includeSubDomains=true&timeGranularity=Monthly",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/007-get-websiteoverview-webranks-singlemetric.json"
+    },
+    {
+      "id": "008",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverview/EngagementOverview/Table?country=999&iso=%5Bobject+Object%5D&to=2026%7C07%7C31&from=2026%7C05%7C01&isWindow=false&webSource=Total&ignoreFilterConsistency=false&includeSubDomains=true&timeGranularity=Monthly&keys=wavespeed.ai&ShouldGetVerifiedData=true",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/008-get-websiteoverview-engagementoverview-table.json"
+    },
+    {
+      "id": "009",
+      "url": "https://sim.3ue.co/widgetApi/MarketingMixTotal/TrafficSourcesOverview/PieChart?country=999&from=2026%7C05%7C01&to=2026%7C07%7C31&includeSubDomains=true&isWindow=false&timeGranularity=Monthly&keys=wavespeed.ai",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/009-get-marketingmixtotal-trafficsourcesoverview-piechart.json"
+    },
+    {
+      "id": "010",
+      "url": "https://sim.3ue.co/widgetApi/SearchKeywordsV2/WebsitePerformance/Table?country=999&from=2026%7C07%7C01&includeSubDomains=true&isWindow=false&keys=wavespeed.ai&to=2026%7C07%7C31&webSource=Total&SourceType=Paid&pageSize=5&timeGranularity=Monthly&duration=1m",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/010-get-searchkeywordsv2-websiteperformance-table.json"
+    },
+    {
+      "id": "011",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverviewDesktop/TrafficSourcesSocial/PieChart?country=999&includeSubDomains=true&timeGranularity=Monthly&from=2026%7C05%7C01&to=2026%7C07%7C31&isWindow=false&keys=wavespeed.ai",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/011-get-websiteoverviewdesktop-trafficsourcessocial-piechart.json"
+    },
+    {
+      "id": "012",
+      "url": "https://sim.3ue.co/widgetApi/TrafficSourcesSearchV2/BrandedKeywords/WebsitePerformance/PieChart?country=999&from=2026%7C07%7C01&includeSubDomains=true&isWindow=false&keys=wavespeed.ai&to=2026%7C07%7C31&webSource=Total&timeGranularity=Monthly&duration=1m",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/012-get-brandedkeywords-websiteperformance-piechart.json"
+    },
+    {
+      "id": "013",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverview/TopReferringCategories/Table?country=999&from=2026%7C05%7C01&includeSubDomains=true&isWindow=false&keys=wavespeed.ai&timeGranularity=Monthly&to=2026%7C07%7C31&webSource=Total&orderBy=TotalShare+desc",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/013-get-websiteoverview-topreferringcategories-table.json"
+    },
+    {
+      "id": "014",
+      "url": "https://sim.3ue.co/api/AdIntelligence/Advertiser/Publishers/breakdown?country=999&key=wavespeed.ai&from=2026%7C05%7C01&to=2026%7C07%7C31&page=1&pageSize=5&isWindow=false&sort=visits&asc=false",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/014-get-advertiser-publishers-breakdown.json"
+    },
+    {
+      "id": "015",
+      "url": "https://sim.3ue.co/api/WebsiteOverview/getheader?mainDomainOnly=false&includeCrossData=true&key=wavespeed.ai&isWWW=false&country=999&iso=%5Bobject+Object%5D&to=2026%7C07%7C31&from=2026%7C05%7C01&isWindow=false&webSource=Total&ignoreFilterConsistency=false",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/015-get-api-websiteoverview-getheader.json"
+    },
+    {
+      "id": "016",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverview/EngagementDesktopVsMobileVisits/PieChart?country=999&from=2026%7C05%7C01&to=2026%7C07%7C31&keys=wavespeed.ai&webSource=Total&isWindow=false&includeSubDomains=true&timeGranularity=Monthly&ShouldGetVerifiedData=false",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/016-get-websiteoverview-engagementdesktopvsmobilevisits-piechart.json"
+    },
+    {
+      "id": "017",
+      "url": "https://sim.3ue.co/api/ConversionRates/Countries?keys=wavespeed.ai&from=2026%7C02%7C01&to=2026%7C07%7C31&includeSubdomains=true",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/017-get-api-conversionrates-countries.json"
+    },
+    {
+      "id": "018",
+      "url": "https://sim.3ue.co/api/ConversionRates/Overview?country=999&from=2026%7C05%7C01&to=2026%7C07%7C31&keys=wavespeed.ai&isWindow=false&includeSubdomains=true",
+      "method": "GET",
+      "status": 406,
+      "contentType": "",
+      "bodyPath": "network/018-get-api-conversionrates-overview.json"
+    },
+    {
+      "id": "019",
+      "url": "https://sim.3ue.co/api/WebsiteOverview/getsimilarsites?key=wavespeed.ai&limit=4&country=999&webSource=Total",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/019-get-api-websiteoverview-getsimilarsites.json"
+    },
+    {
+      "id": "020",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverview/EngagementVisits/Table?country=999&from=2026%7C05%7C01&to=2026%7C07%7C31&timeGranularity=Monthly&ShouldGetVerifiedData=false&includeSubDomains=true&isWindow=false&keys=wavespeed.ai&webSource=Total",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/020-get-websiteoverview-engagementvisits-table.json"
+    },
+    {
+      "id": "021",
+      "url": "https://sim.3ue.co/widgetApi/SearchKeywordsV2/WebsitePerformance/Table?country=999&from=2026%7C07%7C01&includeSubDomains=true&isWindow=false&keys=wavespeed.ai&to=2026%7C07%7C31&webSource=Total&SourceType=Organic&pageSize=5&timeGranularity=Monthly&duration=1m",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/021-get-searchkeywordsv2-websiteperformance-table.json"
+    },
+    {
+      "id": "022",
+      "url": "https://sim.3ue.co/widgetApi/MarketingMixTotal/TrafficSourcesOverview/PieChart?country=999&keys=wavespeed.ai&from=2026%7C05%7C01&to=2026%7C07%7C31&isWindow=false&timeGranularity=Monthly&includeSubDomains=true",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/022-get-marketingmixtotal-trafficsourcesoverview-piechart.json"
+    },
+    {
+      "id": "023",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverview/TrafficDestinationReferrals/Table?appMode=single&country=999&from=2026%7C05%7C01&includeSubDomains=true&isWindow=false&keys=wavespeed.ai&timeGranularity=Monthly&to=2026%7C07%7C31&pageSize=5&webSource=Total&orderBy=TotalShare+desc",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/023-get-websiteoverview-trafficdestinationreferrals-table.json"
+    },
+    {
+      "id": "024",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverviewDesktop/TrafficDestinationAds/Table?appMode=single&country=999&from=2026%7C05%7C01&includeSubDomains=true&isWindow=false&keys=wavespeed.ai&timeGranularity=Monthly&to=2026%7C07%7C31&pageSize=5&webSource=Total&orderBy=TotalShare+desc",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/024-get-websiteoverviewdesktop-trafficdestinationads-table.json"
+    },
+    {
+      "id": "025",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteGeography/Geography/Table?country=999&includeSubDomains=true&webSource=Total&timeGranularity=Monthly&orderBy=TotalShare+desc&keys=wavespeed.ai&pageSize=5&from=2026%7C05%7C01&to=2026%7C07%7C31&isWindow=false",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/025-get-websitegeography-geography-table.json"
+    },
+    {
+      "id": "026",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverview/TopReferrals/Table?country=999&from=2026%7C05%7C01&includeSubDomains=true&isWindow=false&keys=wavespeed.ai&timeGranularity=Monthly&to=2026%7C07%7C31&pageSize=5&webSource=Total&orderBy=TotalShare+desc",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/026-get-websiteoverview-topreferrals-table.json"
+    },
+    {
+      "id": "027",
+      "url": "https://sim.3ue.co/api/WebsiteOverview/getsimilarsites?key=wavespeed.ai&limit=20&country=999&webSource=Total",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/027-get-api-websiteoverview-getsimilarsites.json"
+    },
+    {
+      "id": "028",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverview/EngagementVisits/SingleMetric?country=999&from=2026%7C05%7C01&to=2026%7C07%7C31&keys=wavespeed.ai&webSource=Total&isWindow=false&includeSubDomains=true&timeGranularity=Monthly&ShouldGetVerifiedData=false",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/028-get-websiteoverview-engagementvisits-singlemetric.json"
+    },
+    {
+      "id": "029",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverview/EngagementOverview/Table?country=999&iso=%5Bobject+Object%5D&to=2026%7C07%7C31&from=2026%7C05%7C01&isWindow=false&webSource=Total&ignoreFilterConsistency=false&includeSubDomains=true&timeGranularity=Monthly&keys=wavespeed.ai&ShouldGetVerifiedData=false",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/029-get-websiteoverview-engagementoverview-table.json"
+    },
+    {
+      "id": "030",
+      "url": "https://sim.3ue.co/api/WebsiteOverview/retailIntelligenceUpsell?domain=wavespeed.ai",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/030-get-api-websiteoverview-retailintelligenceupsell.json"
+    },
+    {
+      "id": "031",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverview/EngagementVisits/Graph?country=999&from=2026%7C05%7C01&to=2026%7C07%7C31&timeGranularity=Monthly&ShouldGetVerifiedData=false&includeSubDomains=true&isWindow=false&keys=wavespeed.ai&webSource=Total",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/031-get-websiteoverview-engagementvisits-graph.json"
+    },
+    {
+      "id": "032",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverview/EngagementVisits/Table?country=999&from=2026%7C05%7C01&to=2026%7C07%7C31&timeGranularity=Monthly&ShouldGetVerifiedData=false&includeSubDomains=true&isWindow=false&keys=wavespeed.ai%2Cfal.ai%2Chiggsfield.ai%2Creplicate.com%2Cviggle.ai&webSource=Total",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/032-get-websiteoverview-engagementvisits-table.json"
+    },
+    {
+      "id": "033",
+      "url": "https://sim.3ue.co/widgetApi/WebsiteOverview/EngagementVisits/Graph?country=999&from=2026%7C05%7C01&to=2026%7C07%7C31&timeGranularity=Monthly&ShouldGetVerifiedData=false&includeSubDomains=true&isWindow=false&keys=wavespeed.ai%2Cfal.ai%2Chiggsfield.ai%2Creplicate.com%2Cviggle.ai&webSource=Total",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPath": "network/033-get-websiteoverview-engagementvisits-graph.json"
+    }
+  ]
+}

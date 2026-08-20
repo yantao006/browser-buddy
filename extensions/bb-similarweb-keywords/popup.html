@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body { font: 13px/1.4 -apple-system, BlinkMacSystemFont, sans-serif; width: 280px; margin: 12px; }
+    label { display: block; color: #666; margin-bottom: 4px; }
+    input, select { width: 100%; box-sizing: border-box; padding: 6px 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 6px; background: #fff; }
+    button { width: 100%; padding: 8px 10px; border: 0; border-radius: 6px; background: #1677ff; color: #fff; cursor: pointer; }
+    button:disabled { opacity: .6; cursor: default; }
+    button.secondary { background: #fff; color: #1677ff; border: 1px solid #1677ff; margin-top: 8px; }
+    #status { margin-top: 8px; color: #555; white-space: pre-wrap; }
+    #pages-row.hidden, #fill.hidden, #export-form.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div id="export-form">
+    <div id="pages-row">
+      <label for="pages">页数</label>
+      <select id="pages"></select>
+    </div>
+    <label for="name">文件名</label>
+    <input id="name" type="text" spellcheck="false" />
+    <button id="go">导出到 CSV</button>
+  </div>
+  <button id="fill" class="secondary hidden">填入五个域名并搜索</button>
+  <div id="status">正在识别当前页面…</div>
+  <script src="popup.js"></script>
+</body>
+</html>

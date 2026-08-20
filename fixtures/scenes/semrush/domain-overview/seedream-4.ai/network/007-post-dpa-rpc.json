@@ -1,0 +1,103 @@
+[
+  {
+    "jsonrpc": "2.0",
+    "id": 7,
+    "result": [
+      {
+        "adwordsPositions": 0,
+        "commonKeywords": 74,
+        "competitionLvl": 0.76,
+        "domain": "seedream.pro",
+        "organicPositions": 160,
+        "organicTraffic": 4932,
+        "organicTrafficCost": 4838,
+        "positions": 177,
+        "serpFeaturesPositions": 17,
+        "serpFeaturesTraffic": 223,
+        "serpFeaturesTrafficCost": 238,
+        "traffic": 5155,
+        "trafficCost": 5076
+      },
+      {
+        "adwordsPositions": 0,
+        "commonKeywords": 57,
+        "competitionLvl": 0.68,
+        "domain": "seedream-4.io",
+        "organicPositions": 260,
+        "organicTraffic": 930,
+        "organicTrafficCost": 1015,
+        "positions": 269,
+        "serpFeaturesPositions": 9,
+        "serpFeaturesTraffic": 40,
+        "serpFeaturesTrafficCost": 46,
+        "traffic": 970,
+        "trafficCost": 1061
+      },
+      {
+        "adwordsPositions": 0,
+        "commonKeywords": 32,
+        "competitionLvl": 0.42,
+        "domain": "seedream4.org",
+        "organicPositions": 105,
+        "organicTraffic": 479,
+        "organicTrafficCost": 563,
+        "positions": 106,
+        "serpFeaturesPositions": 1,
+        "serpFeaturesTraffic": 0,
+        "serpFeaturesTrafficCost": 0,
+        "traffic": 479,
+        "trafficCost": 563
+      },
+      {
+        "adwordsPositions": 0,
+        "commonKeywords": 23,
+        "competitionLvl": 0.31,
+        "domain": "seedream-4.net",
+        "organicPositions": 132,
+        "organicTraffic": 4,
+        "organicTrafficCost": 1,
+        "positions": 132,
+        "serpFeaturesPositions": 0,
+        "serpFeaturesTraffic": 0,
+        "serpFeaturesTrafficCost": 0,
+        "traffic": 4,
+        "trafficCost": 1
+      },
+      {
+        "adwordsPositions": 0,
+        "commonKeywords": 22,
+        "competitionLvl": 0.23,
+        "domain": "seedreampro.com",
+        "organicPositions": 116,
+        "organicTraffic": 84,
+        "organicTrafficCost": 65,
+        "positions": 118,
+        "serpFeaturesPositions": 2,
+        "serpFeaturesTraffic": 3,
+        "serpFeaturesTrafficCost": 2,
+        "traffic": 87,
+        "trafficCost": 67
+      },
+      {
+        "adwordsPositions": 0,
+        "commonKeywords": 196,
+        "competitionLvl": 1,
+        "domain": "seedream-4.ai",
+        "organicPositions": 182,
+        "organicTraffic": 2037,
+        "organicTrafficCost": 2209,
+        "positions": 196,
+        "serpFeaturesPositions": 14,
+        "serpFeaturesTraffic": 19,
+        "serpFeaturesTrafficCost": 20,
+        "traffic": 2056,
+        "trafficCost": 2229
+      }
+    ]
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 8,
+    "result": 217
+  }
+]

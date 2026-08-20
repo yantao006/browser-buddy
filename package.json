@@ -1,0 +1,26 @@
+{
+  "name": "browser-buddy",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Multiple Chrome extensions for extracting Semrush and Similarweb data, with a shared fixture-first test harness.",
+  "packageManager": "pnpm@9.14.3",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "ingest": "tsx tools/capture/ingest.ts"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.9",
+    "@types/node": "^24.3.0",
+    "happy-dom": "^18.0.1",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4",
+    "zod": "^4.0.17"
+  }
+}

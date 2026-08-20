@@ -1,0 +1,1808 @@
+{
+  "jsonrpc": "2.0",
+  "id": 3,
+  "result": [
+    {
+      "code": "be",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Belgium",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "et",
+      "currencies": [
+        "usd",
+        "etb"
+      ],
+      "isPermitted": true,
+      "name": "Google Ethiopia",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "gh",
+      "currencies": [
+        "usd",
+        "ghs"
+      ],
+      "isPermitted": true,
+      "name": "Google Ghana",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "kw",
+      "currencies": [
+        "usd",
+        "kwd"
+      ],
+      "isPermitted": true,
+      "name": "Google Kuwait",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "pe",
+      "currencies": [
+        "usd",
+        "pen"
+      ],
+      "isPermitted": true,
+      "name": "Google Peru",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "tw",
+      "currencies": [
+        "usd",
+        "twd"
+      ],
+      "isPermitted": true,
+      "name": "Google Taiwan",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ve",
+      "currencies": [
+        "usd",
+        "vef"
+      ],
+      "isPermitted": true,
+      "name": "Google Venezuela",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ar",
+      "currencies": [
+        "usd",
+        "ars"
+      ],
+      "isPermitted": true,
+      "name": "Google Argentina",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "hk",
+      "currencies": [
+        "usd",
+        "hkd"
+      ],
+      "isPermitted": true,
+      "name": "Google Hong Kong",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-fr",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Mobile France",
+      "positionsCountOnSERP": 20,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-it",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Mobile Italy",
+      "positionsCountOnSERP": 20,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-mx",
+      "currencies": [
+        "usd",
+        "mxn"
+      ],
+      "isPermitted": true,
+      "name": "Mobile Mexico",
+      "positionsCountOnSERP": 20,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "az",
+      "currencies": [
+        "usd",
+        "azn"
+      ],
+      "isPermitted": true,
+      "name": "Google Azerbaijan",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "eg",
+      "currencies": [
+        "usd",
+        "egp"
+      ],
+      "isPermitted": true,
+      "name": "Google Egypt",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "kr",
+      "currencies": [
+        "usd",
+        "krw"
+      ],
+      "isPermitted": true,
+      "name": "Google South Korea",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-id",
+      "currencies": [
+        "usd",
+        "idr"
+      ],
+      "isPermitted": true,
+      "name": "Mobile Indonesia",
+      "positionsCountOnSERP": 20,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "kh",
+      "currencies": [
+        "usd",
+        "khr"
+      ],
+      "isPermitted": true,
+      "name": "Google Cambodia",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "gr",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Greece",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "sk",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Slovakia",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ae",
+      "currencies": [
+        "usd",
+        "aed"
+      ],
+      "isPermitted": true,
+      "name": "Google United Arab Emirates",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-se",
+      "currencies": [
+        "usd",
+        "sek"
+      ],
+      "isPermitted": true,
+      "name": "Mobile Sweden",
+      "positionsCountOnSERP": 20,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "lb",
+      "currencies": [
+        "usd",
+        "lbp"
+      ],
+      "isPermitted": true,
+      "name": "Google Lebanon",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ro",
+      "currencies": [
+        "usd",
+        "ron"
+      ],
+      "isPermitted": true,
+      "name": "Google Romania",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "nl",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Netherland",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "bw",
+      "currencies": [
+        "usd",
+        "bwp"
+      ],
+      "isPermitted": true,
+      "name": "Google Botswana",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "sv",
+      "currencies": [
+        "usd"
+      ],
+      "isPermitted": true,
+      "name": "Google El Salvador",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "lk",
+      "currencies": [
+        "usd",
+        "lkr"
+      ],
+      "isPermitted": true,
+      "name": "Google Sri Lanka",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "th",
+      "currencies": [
+        "usd",
+        "thb"
+      ],
+      "isPermitted": true,
+      "name": "Google Thailand",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-ca",
+      "currencies": [
+        "usd",
+        "cad"
+      ],
+      "isPermitted": true,
+      "name": "Mobile Canada",
+      "positionsCountOnSERP": 20,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-dk",
+      "currencies": [
+        "usd",
+        "dkk"
+      ],
+      "isPermitted": true,
+      "name": "Mobile Denmark",
+      "positionsCountOnSERP": 20,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "by",
+      "currencies": [
+        "usd",
+        "byr"
+      ],
+      "isPermitted": true,
+      "name": "Google Belarus",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "hr",
+      "currencies": [
+        "usd",
+        "hrk"
+      ],
+      "isPermitted": true,
+      "name": "Google Croatia",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mz",
+      "currencies": [
+        "usd",
+        "mzn"
+      ],
+      "isPermitted": true,
+      "name": "Google Mozambique",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "br",
+      "currencies": [
+        "usd",
+        "brl"
+      ],
+      "isPermitted": true,
+      "name": "Google Brazil",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "hu",
+      "currencies": [
+        "usd",
+        "huf"
+      ],
+      "isPermitted": true,
+      "name": "Google Hungary",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ba",
+      "currencies": [
+        "usd",
+        "bam"
+      ],
+      "isPermitted": true,
+      "name": "Google Bosnia and Herzegovina",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "in",
+      "currencies": [
+        "usd",
+        "inr"
+      ],
+      "isPermitted": true,
+      "name": "Google India",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "cv",
+      "currencies": [
+        "usd",
+        "cve"
+      ],
+      "isPermitted": true,
+      "name": "Google Cabo Verde",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "cr",
+      "currencies": [
+        "usd",
+        "crc"
+      ],
+      "isPermitted": true,
+      "name": "Google Costa Rica",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "dk",
+      "currencies": [
+        "usd",
+        "dkk"
+      ],
+      "isPermitted": true,
+      "name": "Google Denmark",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "pl",
+      "currencies": [
+        "usd",
+        "pln"
+      ],
+      "isPermitted": true,
+      "name": "Google Poland",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-es",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Mobile Spain",
+      "positionsCountOnSERP": 20,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "cl",
+      "currencies": [
+        "usd",
+        "clp"
+      ],
+      "isPermitted": true,
+      "name": "Google Chile",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "om",
+      "currencies": [
+        "usd",
+        "omr"
+      ],
+      "isPermitted": true,
+      "name": "Google Oman",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ph",
+      "currencies": [
+        "usd",
+        "php"
+      ],
+      "isPermitted": true,
+      "name": "Google Philippines",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "bs",
+      "currencies": [
+        "usd",
+        "bsd"
+      ],
+      "isPermitted": true,
+      "name": "Google Bahamas",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ca",
+      "currencies": [
+        "usd",
+        "cad"
+      ],
+      "isPermitted": true,
+      "name": "Google Canada",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "tr",
+      "currencies": [
+        "usd",
+        "try"
+      ],
+      "isPermitted": true,
+      "name": "Google Turkey",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-au",
+      "currencies": [
+        "usd",
+        "aud"
+      ],
+      "isPermitted": true,
+      "name": "Mobile Australia",
+      "positionsCountOnSERP": 20,
+      "region": "australia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "is",
+      "currencies": [
+        "usd",
+        "isk"
+      ],
+      "isPermitted": true,
+      "name": "Google Iceland",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "pt",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Portugal",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "au",
+      "currencies": [
+        "usd",
+        "aud"
+      ],
+      "isPermitted": true,
+      "name": "Google Australia",
+      "positionsCountOnSERP": 100,
+      "region": "australia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "jp",
+      "currencies": [
+        "usd",
+        "jpy"
+      ],
+      "isPermitted": true,
+      "name": "Google Japan",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-tr",
+      "currencies": [
+        "usd",
+        "try"
+      ],
+      "isPermitted": true,
+      "name": "Mobile Turkey",
+      "positionsCountOnSERP": 20,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "py",
+      "currencies": [
+        "usd",
+        "pyg"
+      ],
+      "isPermitted": true,
+      "name": "Google Paraguay",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "fr",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google France",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "cz",
+      "currencies": [
+        "usd",
+        "czk"
+      ],
+      "isPermitted": true,
+      "name": "Google Czech Republic",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "uy",
+      "currencies": [
+        "usd",
+        "uyu"
+      ],
+      "isPermitted": true,
+      "name": "Google Uruguay",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "se",
+      "currencies": [
+        "usd",
+        "sek"
+      ],
+      "isPermitted": true,
+      "name": "Google Sweden",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "no",
+      "currencies": [
+        "usd",
+        "nok"
+      ],
+      "isPermitted": true,
+      "name": "Google Norway",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-nl",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Mobile Netherland",
+      "positionsCountOnSERP": 20,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-no",
+      "currencies": [
+        "usd",
+        "nok"
+      ],
+      "isPermitted": true,
+      "name": "Mobile Norway",
+      "positionsCountOnSERP": 20,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "bn",
+      "currencies": [
+        "usd",
+        "bnd"
+      ],
+      "isPermitted": true,
+      "name": "Google Brunei",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ee",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Estonia",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "kz",
+      "currencies": [
+        "usd",
+        "kzt"
+      ],
+      "isPermitted": true,
+      "name": "Google Kazakhstan",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "tt",
+      "currencies": [
+        "usd",
+        "ttd"
+      ],
+      "isPermitted": true,
+      "name": "Google Trinidad and Tobago",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "us",
+      "currencies": [
+        "usd"
+      ],
+      "isPermitted": true,
+      "name": "Google USA",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-de",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Mobile Germany",
+      "positionsCountOnSERP": 20,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-in",
+      "currencies": [
+        "usd",
+        "inr"
+      ],
+      "isPermitted": true,
+      "name": "Mobile India",
+      "positionsCountOnSERP": 20,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "al",
+      "currencies": [
+        "usd",
+        "all"
+      ],
+      "isPermitted": true,
+      "name": "Google Albania",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "bh",
+      "currencies": [
+        "usd",
+        "bhd"
+      ],
+      "isPermitted": true,
+      "name": "Google Bahrain",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mg",
+      "currencies": [
+        "usd",
+        "mga"
+      ],
+      "isPermitted": true,
+      "name": "Google Madagascar",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ma",
+      "currencies": [
+        "usd",
+        "mad"
+      ],
+      "isPermitted": true,
+      "name": "Google Morocco",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ng",
+      "currencies": [
+        "usd",
+        "ngn"
+      ],
+      "isPermitted": true,
+      "name": "Google Nigeria",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "de",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Germany",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "pa",
+      "currencies": [
+        "usd",
+        "pab"
+      ],
+      "isPermitted": true,
+      "name": "Google Panama",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "sn",
+      "currencies": [
+        "usd",
+        "xof"
+      ],
+      "isPermitted": true,
+      "name": "Google Senegal",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "si",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Slovenia",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "zm",
+      "currencies": [
+        "usd",
+        "zmk"
+      ],
+      "isPermitted": true,
+      "name": "Google Zambia",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ly",
+      "currencies": [
+        "usd",
+        "lyd"
+      ],
+      "isPermitted": true,
+      "name": "Google Libya",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "my",
+      "currencies": [
+        "usd",
+        "myr"
+      ],
+      "isPermitted": true,
+      "name": "Google Malaysia",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mu",
+      "currencies": [
+        "usd",
+        "mur"
+      ],
+      "isPermitted": true,
+      "name": "Google Mauritius",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "md",
+      "currencies": [
+        "usd",
+        "mdl"
+      ],
+      "isPermitted": true,
+      "name": "Google Moldova",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "np",
+      "currencies": [
+        "usd",
+        "npr"
+      ],
+      "isPermitted": true,
+      "name": "Google Nepal",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ch",
+      "currencies": [
+        "usd",
+        "chf"
+      ],
+      "isPermitted": true,
+      "name": "Google Switzerland",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "af",
+      "currencies": [
+        "usd",
+        "afn"
+      ],
+      "isPermitted": true,
+      "name": "Google Afghanistan",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ao",
+      "currencies": [
+        "usd",
+        "aoa"
+      ],
+      "isPermitted": true,
+      "name": "Google Angola",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "it",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Italy",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-us",
+      "currencies": [
+        "usd"
+      ],
+      "isPermitted": true,
+      "name": "Mobile USA",
+      "positionsCountOnSERP": 20,
+      "region": "america",
+      "searchEngine": "mobile",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-uk",
+      "currencies": [
+        "usd",
+        "gbp"
+      ],
+      "isPermitted": true,
+      "name": "Mobile UK",
+      "positionsCountOnSERP": 20,
+      "region": "europe",
+      "searchEngine": "mobile",
+      "type": "standard"
+    },
+    {
+      "code": "dz",
+      "currencies": [
+        "usd",
+        "dzd"
+      ],
+      "isPermitted": true,
+      "name": "Google Algeria",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "lv",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Latvia",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ni",
+      "currencies": [
+        "usd",
+        "nio"
+      ],
+      "isPermitted": true,
+      "name": "Google Nicaragua",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "sa",
+      "currencies": [
+        "usd",
+        "sar"
+      ],
+      "isPermitted": true,
+      "name": "Google Saudi Arabia",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "qa",
+      "currencies": [
+        "usd",
+        "qar"
+      ],
+      "isPermitted": true,
+      "name": "Google Qatar",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "tn",
+      "currencies": [
+        "usd",
+        "tnd"
+      ],
+      "isPermitted": true,
+      "name": "Google Tunisia",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ua",
+      "currencies": [
+        "usd",
+        "uah"
+      ],
+      "isPermitted": true,
+      "name": "Google Ukraine",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "zw",
+      "currencies": [
+        "usd"
+      ],
+      "isPermitted": true,
+      "name": "Google Zimbabwe",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "pk",
+      "currencies": [
+        "usd",
+        "pkr"
+      ],
+      "isPermitted": true,
+      "name": "Google Pakistan",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "cd",
+      "currencies": [
+        "usd",
+        "cdf"
+      ],
+      "isPermitted": true,
+      "name": "Google Congo",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "gy",
+      "currencies": [
+        "usd",
+        "gyd"
+      ],
+      "isPermitted": true,
+      "name": "Google Guyana",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ht",
+      "currencies": [
+        "usd",
+        "htg"
+      ],
+      "isPermitted": true,
+      "name": "Google Haiti",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "me",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Montenegro",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "uk",
+      "currencies": [
+        "usd",
+        "gbp"
+      ],
+      "isPermitted": true,
+      "name": "Google UK",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "do",
+      "currencies": [
+        "usd",
+        "dop"
+      ],
+      "isPermitted": true,
+      "name": "Google Dominican Republic",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "at",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Austria",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "bz",
+      "currencies": [
+        "usd",
+        "bzd"
+      ],
+      "isPermitted": true,
+      "name": "Google Belize",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "bg",
+      "currencies": [
+        "usd",
+        "bgn"
+      ],
+      "isPermitted": true,
+      "name": "Google Bulgaria",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "jm",
+      "currencies": [
+        "usd",
+        "jmd"
+      ],
+      "isPermitted": true,
+      "name": "Google Jamaica",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "jo",
+      "currencies": [
+        "usd",
+        "jod"
+      ],
+      "isPermitted": true,
+      "name": "Google Jordan",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "lt",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Lithuania",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mx",
+      "currencies": [
+        "usd",
+        "mxn"
+      ],
+      "isPermitted": true,
+      "name": "Google Mexico",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ge",
+      "currencies": [
+        "usd",
+        "gel"
+      ],
+      "isPermitted": true,
+      "name": "Google Georgia",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "bd",
+      "currencies": [
+        "usd",
+        "bdt"
+      ],
+      "isPermitted": true,
+      "name": "Google Bangladesh",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "gt",
+      "currencies": [
+        "usd",
+        "gtq"
+      ],
+      "isPermitted": true,
+      "name": "Google Guatemala",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "nz",
+      "currencies": [
+        "usd",
+        "nzd"
+      ],
+      "isPermitted": true,
+      "name": "Google New Zealand",
+      "positionsCountOnSERP": 100,
+      "region": "australia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ru",
+      "currencies": [
+        "usd",
+        "rub"
+      ],
+      "isPermitted": true,
+      "name": "Google Russia",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "sg",
+      "currencies": [
+        "usd",
+        "sgd"
+      ],
+      "isPermitted": true,
+      "name": "Google Singapore",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mt",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Malta",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "na",
+      "currencies": [
+        "usd",
+        "nad"
+      ],
+      "isPermitted": true,
+      "name": "Google Namibia",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-il",
+      "currencies": [
+        "usd",
+        "ils"
+      ],
+      "isPermitted": true,
+      "name": "Mobile Israel",
+      "positionsCountOnSERP": 20,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mn",
+      "currencies": [
+        "usd",
+        "mnt"
+      ],
+      "isPermitted": true,
+      "name": "Google Mongolia",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "rs",
+      "currencies": [
+        "usd",
+        "rsd"
+      ],
+      "isPermitted": true,
+      "name": "Google Serbia",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "cm",
+      "currencies": [
+        "usd",
+        "xaf"
+      ],
+      "isPermitted": true,
+      "name": "Google Cameroon",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "za",
+      "currencies": [
+        "usd",
+        "zar"
+      ],
+      "isPermitted": true,
+      "name": "Google South Africa",
+      "positionsCountOnSERP": 100,
+      "region": "africa",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "es",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Spain",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ie",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Ireland",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "mobile-br",
+      "currencies": [
+        "usd",
+        "brl"
+      ],
+      "isPermitted": true,
+      "name": "Mobile Brazil",
+      "positionsCountOnSERP": 20,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "hn",
+      "currencies": [
+        "usd",
+        "hnl"
+      ],
+      "isPermitted": true,
+      "name": "Google Honduras",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "il",
+      "currencies": [
+        "usd",
+        "ils"
+      ],
+      "isPermitted": true,
+      "name": "Google Israel",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "bo",
+      "currencies": [
+        "usd",
+        "bob"
+      ],
+      "isPermitted": true,
+      "name": "Google Bolivia",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "co",
+      "currencies": [
+        "usd",
+        "cop"
+      ],
+      "isPermitted": true,
+      "name": "Google Colombia",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "cy",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Cyprus",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "ec",
+      "currencies": [
+        "usd"
+      ],
+      "isPermitted": true,
+      "name": "Google Ecuador",
+      "positionsCountOnSERP": 100,
+      "region": "america",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "vn",
+      "currencies": [
+        "usd",
+        "vnd"
+      ],
+      "isPermitted": true,
+      "name": "Google Vietnam",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "fi",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Finland",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "am",
+      "currencies": [
+        "usd",
+        "amd"
+      ],
+      "isPermitted": true,
+      "name": "Google Armenia",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "id",
+      "currencies": [
+        "usd",
+        "idr"
+      ],
+      "isPermitted": true,
+      "name": "Google Indonesia",
+      "positionsCountOnSERP": 100,
+      "region": "asia",
+      "searchEngine": "google",
+      "type": "standard"
+    },
+    {
+      "code": "lu",
+      "currencies": [
+        "usd",
+        "eur"
+      ],
+      "isPermitted": true,
+      "name": "Google Luxembourg",
+      "positionsCountOnSERP": 100,
+      "region": "europe",
+      "searchEngine": "google",
+      "type": "standard"
+    }
+  ]
+}

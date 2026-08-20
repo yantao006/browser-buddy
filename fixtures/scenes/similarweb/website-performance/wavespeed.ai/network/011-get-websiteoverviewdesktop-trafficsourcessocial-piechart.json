@@ -1,0 +1,26 @@
+{
+  "Data": {
+    "wavespeed.ai": {
+      "Youtube": {
+        "Share": 0.7609214879757024,
+        "Favicon": "https://site-images.similarcdn.com/image?url=youtube.com&t=2&s=1&h=e117fb09ba0a34dee9830863bf927d29fc864e342583a36a667bf12346e88e20"
+      },
+      "Reddit": {
+        "Share": 0.09607147762384269,
+        "Favicon": "https://site-images.similarcdn.com/image?url=reddit.com&t=2&s=1&h=66f2412047e0362ec60d5583d4b186511a8e859446bb112c60d22968facae906"
+      },
+      "Discord": {
+        "Share": 0.042373620861212824,
+        "Favicon": "https://site-images.similarcdn.com/image?url=discord.com&t=2&s=1&h=133c0aed0b1b6c3760db4875f51accd42ff1157854dd0ee0eabab700af80a348"
+      },
+      "WhatsApp Webapp": {
+        "Share": 0.023437031463374447,
+        "Favicon": "https://site-images.similarcdn.com/image?url=web.whatsapp.com&t=2&s=1&h=451e82ca011741d37d72edee1d8fdc272155924d894fe937e292066acb713bc8"
+      },
+      "Instagram": {
+        "Share": 0.01997055844414157,
+        "Favicon": "https://site-images.similarcdn.com/image?url=instagram.com&t=2&s=1&h=acbe9ff09f263f0114ce8473b3d3e401bfdc360d5aff845e04182e8d2335ba49"
+      }
+    }
+  }
+}

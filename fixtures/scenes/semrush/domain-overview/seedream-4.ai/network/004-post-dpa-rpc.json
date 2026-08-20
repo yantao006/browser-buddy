@@ -1,0 +1,11 @@
+{
+  "jsonrpc": "2.0",
+  "id": 4,
+  "result": {
+    "isTrialAllowed": false,
+    "isPLAAllowed": true,
+    "isHistoryAllowed": true,
+    "exportLimit": 50000,
+    "isTrialUser": false
+  }
+}

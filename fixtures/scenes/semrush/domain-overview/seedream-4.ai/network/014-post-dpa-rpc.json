@@ -1,0 +1,25 @@
+{
+  "jsonrpc": "2.0",
+  "id": 22,
+  "result": {
+    "ai_visibility": 0,
+    "ai_visibility_benchmark": 0,
+    "cited_pages": 2,
+    "mention_stats": [
+      {
+        "cited_pages": 1,
+        "llm": "google-ai-overview",
+        "llm_code": 2,
+        "mentions_count": 0,
+        "self_mentions_count": 0
+      },
+      {
+        "cited_pages": 1,
+        "llm": "google-ai-mode",
+        "llm_code": 3,
+        "mentions_count": 0,
+        "self_mentions_count": 0
+      }
+    ]
+  }
+}

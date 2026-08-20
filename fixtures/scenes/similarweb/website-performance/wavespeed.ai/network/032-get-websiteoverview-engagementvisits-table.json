@@ -1,0 +1,49 @@
+{
+  "FromAlternativeSources": false,
+  "TotalCount": 0,
+  "TotalTopLevelCount": 0,
+  "KeysDataVerification": {
+    "wavespeed.ai": false,
+    "fal.ai": false,
+    "higgsfield.ai": false,
+    "replicate.com": false,
+    "viggle.ai": false
+  },
+  "Data": [
+    {
+      "Domain": "wavespeed.ai",
+      "Favicon": "https://site-images.similarcdn.com/image?url=wavespeed.ai&t=2&s=0&h=72e1ecae68f70267ad5bfcafec8b9195c88f7c57aa2423d4cbdbede53876382c",
+      "TotalVisits": 6118806.469918782,
+      "Change": -0.0192645178744845,
+      "ShareOfVisits": 0.05873859128095215
+    },
+    {
+      "Domain": "fal.ai",
+      "Favicon": "https://site-images.similarcdn.com/image?url=fal.ai&t=2&s=0&h=69689a835a0c5b48cb0a05fc80f54924502327d587abf3d670be1a0c0bf52d7c",
+      "TotalVisits": 7096682.228885412,
+      "Change": -0.014955416842236979,
+      "ShareOfVisits": 0.06812588679550602
+    },
+    {
+      "Domain": "higgsfield.ai",
+      "Favicon": "https://site-images.similarcdn.com/image?url=higgsfield.ai&t=2&s=0&h=547a089ec5a8efbe4307fe8413ab632369b6de5ea122576fbf0e49204ee3b8be",
+      "TotalVisits": 82378046.6903556,
+      "Change": 0.1679701032729988,
+      "ShareOfVisits": 0.7908029840225063
+    },
+    {
+      "Domain": "replicate.com",
+      "Favicon": "https://site-images.similarcdn.com/image?url=replicate.com&t=2&s=0&h=f8805b40e26030b3e186818abd841fc9c034e0191d6eb016f561ca571d87c956",
+      "TotalVisits": 3553819.612167607,
+      "Change": -0.1140548032320134,
+      "ShareOfVisits": 0.034115535229228416
+    },
+    {
+      "Domain": "viggle.ai",
+      "Favicon": "https://site-images.similarcdn.com/image?url=viggle.ai&t=2&s=0&h=7e19b156f99d8aebdad8dcd00a92337fac9f73f550aa9dd20fea400135ad6d09",
+      "TotalVisits": 5022771.256075685,
+      "Change": -0.034745818133235386,
+      "ShareOfVisits": 0.04821700267180707
+    }
+  ]
+}

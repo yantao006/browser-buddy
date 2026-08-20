@@ -1,0 +1,59 @@
+{
+  "Data": {
+    "wavespeed.ai": {
+      "GlobalRank": {
+        "Value": 25205,
+        "Trend": [
+          {
+            "Key": "2026-05-01",
+            "Value": 21129
+          },
+          {
+            "Key": "2026-06-01",
+            "Value": 23658
+          },
+          {
+            "Key": "2026-07-01",
+            "Value": 25205
+          }
+        ]
+      },
+      "CountryRank": {
+        "Value": 29206,
+        "Trend": [
+          {
+            "Key": "2026-05-01",
+            "Value": 21422
+          },
+          {
+            "Key": "2026-06-01",
+            "Value": 22596
+          },
+          {
+            "Key": "2026-07-01",
+            "Value": 29206
+          }
+        ]
+      },
+      "CategoryRank": {
+        "Value": 551,
+        "Trend": [
+          {
+            "Key": "2026-05-01",
+            "Value": 475
+          },
+          {
+            "Key": "2026-06-01",
+            "Value": 535
+          },
+          {
+            "Key": "2026-07-01",
+            "Value": 551
+          }
+        ]
+      },
+      "Category": "Computers_Electronics_and_Technology/Programming_and_Developer_Software",
+      "Country": 840
+    }
+  }
+}

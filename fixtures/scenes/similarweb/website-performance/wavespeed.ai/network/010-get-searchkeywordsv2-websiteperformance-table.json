@@ -1,0 +1,131 @@
+{
+  "FromAlternativeSources": false,
+  "TotalCount": 5,
+  "TotalTopLevelCount": 0,
+  "Data": [
+    {
+      "SearchTerm": "meme generator",
+      "Change": 413,
+      "TotalShare": 0.05224634023220596,
+      "TotalVisits": 4140,
+      "SiteOrigins": {
+        "wavespeed.ai": 1
+      },
+      "PositionPaid": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "PositionOrganic": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "Organic": 0,
+      "Paid": 0,
+      "CPC": 1.4,
+      "KwVolume": 833061
+    },
+    {
+      "SearchTerm": "opus 5",
+      "TotalShare": 0.019308430085815245,
+      "TotalVisits": 1530,
+      "SiteOrigins": {
+        "wavespeed.ai": 1
+      },
+      "PositionPaid": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "PositionOrganic": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "Organic": 0,
+      "Paid": 0,
+      "CPC": 0,
+      "KwVolume": 97044
+    },
+    {
+      "SearchTerm": "mp3 converter",
+      "Change": 33.5,
+      "TotalShare": 0.01741544674406865,
+      "TotalVisits": 1380,
+      "SiteOrigins": {
+        "wavespeed.ai": 1
+      },
+      "PositionPaid": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "PositionOrganic": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "Organic": 0,
+      "Paid": 0,
+      "CPC": 0.54,
+      "KwVolume": 3119957
+    },
+    {
+      "SearchTerm": "elevenlabs",
+      "Change": -0.8168812589413448,
+      "TotalShare": 0.016153457849570924,
+      "TotalVisits": 1280,
+      "SiteOrigins": {
+        "wavespeed.ai": 1
+      },
+      "PositionPaid": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "PositionOrganic": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "Organic": 0,
+      "Paid": 0,
+      "CPC": 0.2,
+      "KwVolume": 6644327
+    },
+    {
+      "SearchTerm": "glm 5.2",
+      "Change": -0.6032786885245902,
+      "TotalShare": 0.015270065623422514,
+      "TotalVisits": 1210,
+      "SiteOrigins": {
+        "wavespeed.ai": 1
+      },
+      "PositionPaid": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "PositionOrganic": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "Organic": 0,
+      "Paid": 0,
+      "CPC": 1.94,
+      "KwVolume": 428417
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "FromAlternativeSources": false,
+  "TotalCount": 0,
+  "TotalTopLevelCount": 0,
+  "KeysDataVerification": {
+    "wavespeed.ai": false
+  },
+  "Data": [
+    {
+      "BounceRate": 0.388770290636719,
+      "UniqueUsers": 792110.4433333334,
+      "DedupUniqueUsers": 681136.1322459182,
+      "VisitsPerUser": 2.5748961824775427,
+      "Source": "Total",
+      "Domain": "wavespeed.ai",
+      "AvgMonthVisits": 2039602.156639594,
+      "AvgVisitDuration": 313.8704387946183,
+      "PagesPerVisit": 5.216545942299815,
+      "TotalPagesViews": 10639678.354124226,
+      "Favicon": "https://site-images.similarcdn.com/image?url=wavespeed.ai&t=2&s=0&h=72e1ecae68f70267ad5bfcafec8b9195c88f7c57aa2423d4cbdbede53876382c"
+    }
+  ]
+}

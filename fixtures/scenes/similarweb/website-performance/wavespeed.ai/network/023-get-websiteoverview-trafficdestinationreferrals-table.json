@@ -1,0 +1,43 @@
+{
+  "FromAlternativeSources": false,
+  "TotalCount": 0,
+  "TotalTopLevelCount": 0,
+  "Data": [
+    {
+      "Domain": "stripe.com",
+      "Share": 0.5227823123887242,
+      "Change": 0.2285232594689988,
+      "Category": "-",
+      "Favicon": "https://site-images.similarcdn.com/image?url=stripe.com&t=2&s=0&h=d68993ccefeee1fe61031cd46586b3158ad13585abae80195cc41b500863c253",
+      "HasAdsense": false
+    },
+    {
+      "Domain": "paypal.com",
+      "Share": 0.21949289872801464,
+      "Change": 0.1474791901413569,
+      "Favicon": "https://site-images.similarcdn.com/image?url=paypal.com&t=2&s=0&h=b76dd86eb38ce2ec2534acd9451f22982019a9c445250e2a35549ea9f480fd7b",
+      "HasAdsense": false
+    },
+    {
+      "Domain": "google.com",
+      "Share": 0.1436106325070658,
+      "Change": 0.3851467766492014,
+      "Category": "-",
+      "Favicon": "https://site-images.similarcdn.com/image?url=google.com&t=2&s=0&h=eb35e0fbafa3eb290132ffdfe47187d950d68daaa659ec1bd4b4e834b8f16461",
+      "HasAdsense": false
+    },
+    {
+      "Domain": "aws.amazon.com",
+      "Share": 0.047533544096834315,
+      "Change": 1.5893734789718976,
+      "Favicon": "https://site-images.similarcdn.com/image?url=aws.amazon.com&t=2&s=0&h=a972c6adf3e7454ef2e79cf9b2f7fc26d6a0fee31eb0c1b3e354b01fe5630384",
+      "HasAdsense": false
+    },
+    {
+      "Domain": "pay.airwallex.com",
+      "Share": 0.016008302272547424,
+      "Favicon": "https://site-images.similarcdn.com/image?url=pay.airwallex.com&t=2&s=0&h=9330a8c180333bd3726ac2e958683bd787cb71c40a58e02229b62b6166998d5e",
+      "HasAdsense": false
+    }
+  ]
+}

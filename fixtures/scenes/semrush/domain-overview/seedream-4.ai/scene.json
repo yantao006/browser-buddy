@@ -1,0 +1,193 @@
+{
+  "id": "semrush/domain-overview/seedream-4.ai",
+  "source": "semrush",
+  "pageType": "domain-overview",
+  "subject": "seedream-4.ai",
+  "url": "https://sem.3ue.co/analytics/overview/?searchType=domain&q=seedream-4.ai",
+  "title": "seedream-4.ai：域名概览",
+  "capturedAt": "2026-08-19T01:15:18.087Z",
+  "locale": "zh",
+  "actions": [
+    {
+      "type": "goto",
+      "url": "https://sem.3ue.co/analytics/overview/?searchType=domain&q=seedream-4.ai"
+    },
+    {
+      "type": "wait",
+      "seconds": 12,
+      "reason": "wait until domain overview metrics render"
+    }
+  ],
+  "domPath": "dom.html",
+  "expectedPath": "expected.json",
+  "network": [
+    {
+      "id": "001",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/001-post-dpa-rpc.json"
+    },
+    {
+      "id": "002",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/002-post-dpa-rpc.json"
+    },
+    {
+      "id": "003",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/003-post-dpa-rpc.json"
+    },
+    {
+      "id": "004",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/004-post-dpa-rpc.json"
+    },
+    {
+      "id": "005",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/005-post-dpa-rpc.json"
+    },
+    {
+      "id": "006",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/006-post-dpa-rpc.json"
+    },
+    {
+      "id": "007",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "bodyPath": "network/007-post-dpa-rpc.json"
+    },
+    {
+      "id": "008",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/008-post-dpa-rpc.json"
+    },
+    {
+      "id": "009",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "bodyPath": "network/009-post-dpa-rpc.json"
+    },
+    {
+      "id": "010",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/010-post-dpa-rpc.json"
+    },
+    {
+      "id": "011",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/011-post-dpa-rpc.json"
+    },
+    {
+      "id": "012",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/012-post-dpa-rpc.json"
+    },
+    {
+      "id": "013",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/013-post-dpa-rpc.json"
+    },
+    {
+      "id": "014",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/014-post-dpa-rpc.json"
+    },
+    {
+      "id": "015",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "bodyPath": "network/015-post-dpa-rpc.json"
+    },
+    {
+      "id": "016",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/016-post-dpa-rpc.json"
+    },
+    {
+      "id": "017",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/017-post-dpa-rpc.json"
+    },
+    {
+      "id": "018",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/018-post-dpa-rpc.json"
+    },
+    {
+      "id": "019",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/019-post-dpa-rpc.json"
+    },
+    {
+      "id": "020",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/020-post-dpa-rpc.json"
+    },
+    {
+      "id": "021",
+      "url": "https://sem.3ue.co/dpa/rpc",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyPath": "network/021-post-dpa-rpc.json"
+    }
+  ]
+}

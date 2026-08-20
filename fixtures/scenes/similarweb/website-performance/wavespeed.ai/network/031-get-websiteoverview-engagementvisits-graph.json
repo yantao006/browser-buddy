@@ -1,0 +1,26 @@
+{
+  "Data": {
+    "wavespeed.ai": {
+      "Total": [
+        [
+          {
+            "Key": "2026-05-01",
+            "Value": 2227062.8512940514
+          },
+          {
+            "Key": "2026-06-01",
+            "Value": 1964797.245136702
+          },
+          {
+            "Key": "2026-07-01",
+            "Value": 1926946.373488028
+          }
+        ]
+      ]
+    }
+  },
+  "KeysDataVerification": {
+    "wavespeed.ai": false
+  },
+  "Ga4FirstOccurrence": {}
+}

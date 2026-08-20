@@ -1,0 +1,41 @@
+{
+  "FromAlternativeSources": false,
+  "TotalCount": 76,
+  "TotalTopLevelCount": 0,
+  "Data": [
+    {
+      "Change": -0.18823308609325984,
+      "Share": 0.2704178649546291,
+      "Domain": "Referral",
+      "Favicon": "https://site-images.similarcdn.com/image?url=referral&t=2&s=0&h=e86dfb04c3e0fc77aa3c5c740a5db19dfd421d8e50423ae6a503b0a7a79a5112",
+      "Category": ""
+    },
+    {
+      "Change": -0.20046845872283295,
+      "Share": 0.2369178135220357,
+      "Domain": "checkout.stripe.com",
+      "Favicon": "https://site-images.similarcdn.com/image?url=checkout.stripe.com&t=2&s=0&h=b8cd94e95509332f54fbddaf07aa6d65829831f32a05bfba2898322ba16c3593",
+      "Category": ""
+    },
+    {
+      "Change": 1.2603898992879647,
+      "Share": 0.0681274385854456,
+      "Domain": "github.com",
+      "Favicon": "https://site-images.similarcdn.com/image?url=github.com&t=2&s=0&h=6525c30f1af9ea5ee8912788b611744e1debcba39a2d0dd3d410b2916169883b",
+      "Category": ""
+    },
+    {
+      "Change": -0.26382759284991725,
+      "Share": 0.05701196806358672,
+      "Domain": "paypal.com",
+      "Favicon": "https://site-images.similarcdn.com/image?url=paypal.com&t=2&s=0&h=b76dd86eb38ce2ec2534acd9451f22982019a9c445250e2a35549ea9f480fd7b",
+      "Category": ""
+    },
+    {
+      "Share": 0.03792925363371506,
+      "Domain": "kie-ai.com",
+      "Favicon": "https://site-images.similarcdn.com/image?url=kie-ai.com&t=2&s=0&h=5e32dcd2c9d236b2003cf530c9f0cd0b938cbfd99c579c7ea0c9b3286c9c1dda",
+      "Category": ""
+    }
+  ]
+}

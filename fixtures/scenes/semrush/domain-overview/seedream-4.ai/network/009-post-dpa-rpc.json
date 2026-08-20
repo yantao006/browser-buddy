@@ -1,0 +1,22 @@
+[
+  {
+    "jsonrpc": "2.0",
+    "id": 9,
+    "result": [
+      {
+        "adwordsPositions": 0,
+        "commonKeywords": 0,
+        "competitionLvl": 100,
+        "domain": "seedream-4.ai",
+        "organicPositions": 182,
+        "traffic": 0,
+        "trafficCost": 0
+      }
+    ]
+  },
+  {
+    "jsonrpc": "2.0",
+    "id": 10,
+    "result": 0
+  }
+]

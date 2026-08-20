@@ -1,0 +1,145 @@
+{
+  "jsonrpc": "2.0",
+  "id": 6,
+  "result": {
+    "anchors": [
+      {
+        "anchor": "<EmptyAnchor>",
+        "backlinks": 1240,
+        "domains": 12
+      },
+      {
+        "anchor": "seedream 4.0 - advanced ai image editing tool",
+        "backlinks": 318,
+        "domains": 1
+      },
+      {
+        "anchor": "seedream 4.0 - editor de imagens ai avançado",
+        "backlinks": 191,
+        "domains": 1
+      },
+      {
+        "anchor": "seedream 4.0 - продвинутый ai редактор изображений",
+        "backlinks": 169,
+        "domains": 1
+      },
+      {
+        "anchor": "seedream 4.0 - 高度なai画像編集ツール",
+        "backlinks": 165,
+        "domains": 1
+      }
+    ],
+    "authorityScore": 12,
+    "backlinks": [
+      {
+        "anchor": "Follow",
+        "nofollow": true,
+        "sourceTitle": "Unlucid AI Review: Photo and Video Generator | Reviews on «AI Market Cap»",
+        "sourceURL": "https://aimarketcap.io/ai-tools/unlucid-ai/",
+        "targetURL": "http://seedream-4.ai/i/aimarketcap"
+      },
+      {
+        "anchor": "Follow",
+        "nofollow": true,
+        "sourceTitle": "Top AI Art Generators & Image Creation Tools | Reviews on «AI Market Cap»",
+        "sourceURL": "https://aimarketcap.io/category-ai/art/",
+        "targetURL": "http://seedream-4.ai/i/aimarketcap"
+      },
+      {
+        "anchor": "seedream-4.ai › home Seedream 4.0 - Advanced AI Image Editor | SEEDREAM-4.AI",
+        "nofollow": false,
+        "sourceTitle": "Yahoo - autohero - Αποτελέσματα Αναζήτησης",
+        "sourceURL": "https://gr.search.yahoo.com/mobile/s?b=8&ei=UTF-8&p=autohero&pz=7&xargs=0",
+        "targetURL": "https://seedream-4.ai/home"
+      },
+      {
+        "anchor": "seedream-4.ai › home Seedream 4.0 - Advanced AI Image Editor | SEEDREAM -4.AI",
+        "nofollow": false,
+        "sourceTitle": "Extreme - Yahoo Search - Actualités",
+        "sourceURL": "https://chfr.search.yahoo.com/mobile/sapp?age=1m&appid=Dgm75h6o&btf=m&ei=UTF-8&fr2=time&p=Extreme",
+        "targetURL": "https://seedream-4.ai/home"
+      },
+      {
+        "anchor": "seedream-4.ai › ai-video › veo3 Veo 3 AI Video Generator - seedream -4.ai",
+        "nofollow": false,
+        "sourceTitle": "avatar+world - Yahoo-hakutulokset",
+        "sourceURL": "https://fi.search.yahoo.com/mobile/s?age=1m&ei=UTF-8&q=avatar%2Bworld",
+        "targetURL": "https://seedream-4.ai/ai-video/veo3"
+      }
+    ],
+    "domains": 74,
+    "follow": 1211,
+    "forms": 1,
+    "frames": 0,
+    "images": 60,
+    "ips": 121,
+    "links": 3515,
+    "nofollow": 2934,
+    "pages": [
+      {
+        "backlinks": 3210,
+        "domains": 48,
+        "sourceTitle": "Seedream 4.0 - Advanced AI Image Editor | SEEDREAM-4.AI",
+        "sourceURL": "https://seedream-4.ai/"
+      },
+      {
+        "backlinks": 11,
+        "domains": 3,
+        "sourceTitle": "Seedream 4.0 - Advanced AI Image Editor | SEEDREAM-4.AI",
+        "sourceURL": "https://seedream-4.ai/home"
+      },
+      {
+        "backlinks": 56,
+        "domains": 2,
+        "sourceTitle": "",
+        "sourceURL": "http://seedream-4.ai/"
+      },
+      {
+        "backlinks": 1174,
+        "domains": 2,
+        "sourceTitle": "",
+        "sourceURL": "https://seedream-4.ai/?via=topaitools"
+      },
+      {
+        "backlinks": 2,
+        "domains": 2,
+        "sourceTitle": "Pricing | Seedream 4.0: AI Video, Image & Music Generator",
+        "sourceURL": "https://seedream-4.ai/pricing"
+      }
+    ],
+    "referralDomains": [
+      {
+        "backlinks": 1647,
+        "country": "",
+        "domain": "mossai.org",
+        "ip": "172.67.188.239"
+      },
+      {
+        "backlinks": 1138,
+        "country": "",
+        "domain": "topai.tools",
+        "ip": "104.26.10.238"
+      },
+      {
+        "backlinks": 92,
+        "country": "",
+        "domain": "exploreaimarket.com",
+        "ip": "172.67.175.10"
+      },
+      {
+        "backlinks": 91,
+        "country": "us",
+        "domain": "toolatlas.io",
+        "ip": "178.156.215.6"
+      },
+      {
+        "backlinks": 82,
+        "country": "",
+        "domain": "probedex.ai",
+        "ip": "172.67.214.201"
+      }
+    ],
+    "texts": 3673,
+    "total": 3706
+  }
+}

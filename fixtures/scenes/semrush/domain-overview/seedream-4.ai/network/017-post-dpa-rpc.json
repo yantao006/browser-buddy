@@ -1,0 +1,14 @@
+{
+  "jsonrpc": "2.0",
+  "id": 21,
+  "result": {
+    "authorityScore": 12,
+    "backlinks": 3706,
+    "health": 41,
+    "linkPower": 1,
+    "naturalness": 6,
+    "referringDomains": 74,
+    "referringIPs": 0,
+    "searchTraffic": 2.66
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "FromAlternativeSources": false,
+  "TotalCount": 5,
+  "TotalTopLevelCount": 0,
+  "Data": [
+    {
+      "SearchTerm": "gpt 5.6",
+      "Change": -0.8234630569655951,
+      "TotalShare": 0.02636899747262005,
+      "TotalVisits": 3130,
+      "SiteOrigins": {
+        "wavespeed.ai": 1
+      },
+      "PositionPaid": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "PositionOrganic": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "Organic": 0,
+      "Paid": 0,
+      "CPC": 4.45,
+      "KwVolume": 237953
+    },
+    {
+      "SearchTerm": "sonnet 5",
+      "Change": 0.3567567567567568,
+      "TotalShare": 0.02114574557708509,
+      "TotalVisits": 2510,
+      "SiteOrigins": {
+        "wavespeed.ai": 1
+      },
+      "PositionPaid": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "PositionOrganic": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "Organic": 0,
+      "Paid": 0,
+      "CPC": 1.34,
+      "KwVolume": 108417
+    },
+    {
+      "SearchTerm": "face swap video",
+      "Change": -0.6134020618556701,
+      "TotalShare": 0.018955349620893007,
+      "TotalVisits": 2250,
+      "SiteOrigins": {
+        "wavespeed.ai": 1
+      },
+      "PositionPaid": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "PositionOrganic": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "Organic": 0,
+      "Paid": 0,
+      "CPC": 0.39,
+      "KwVolume": 91797
+    },
+    {
+      "SearchTerm": "opus 5",
+      "Change": 7.1,
+      "TotalShare": 0.013647851727042965,
+      "TotalVisits": 1620,
+      "SiteOrigins": {
+        "wavespeed.ai": 1
+      },
+      "PositionPaid": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "PositionOrganic": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "Organic": 0,
+      "Paid": 0,
+      "CPC": 0,
+      "KwVolume": 97044
+    },
+    {
+      "SearchTerm": "face swap ai",
+      "Change": 0.0472972972972973,
+      "TotalShare": 0.013058129738837404,
+      "TotalVisits": 1550,
+      "SiteOrigins": {
+        "wavespeed.ai": 1
+      },
+      "PositionPaid": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "PositionOrganic": [
+        {
+          "Key": "wavespeed.ai",
+          "Value": -1
+        }
+      ],
+      "Organic": 0,
+      "Paid": 0,
+      "CPC": 0.48,
+      "KwVolume": 854828
+    }
+  ]
+}

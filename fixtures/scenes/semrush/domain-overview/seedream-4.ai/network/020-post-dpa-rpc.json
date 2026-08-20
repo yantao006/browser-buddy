@@ -1,0 +1,596 @@
+{
+  "jsonrpc": "2.0",
+  "id": 24,
+  "result": [
+    {
+      "database": "ae",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "af",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "al",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "am",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ao",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ar",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "at",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "au",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "az",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ba",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "bd",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "be",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "bg",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "bh",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "bn",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "bo",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "br",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "bs",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "bw",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "bz",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ca",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "cd",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ch",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "cl",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "cm",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "co",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "cr",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "cv",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "cy",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "cz",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "de",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "dk",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "do",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "dz",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ec",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ee",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "eg",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "es",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "et",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "fi",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "fr",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ge",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "gh",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "gr",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "gt",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "gy",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "hk",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "hn",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "hr",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ht",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "hu",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "id",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ie",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "il",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "in",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "is",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "it",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "jm",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "jo",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "jp",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "kh",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "kr",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "kw",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "kz",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "lb",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "lk",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "lt",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "lu",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "lv",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ma",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "md",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "me",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "mg",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "mn",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "mt",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "mu",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "mx",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "my",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "mz",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ng",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ni",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "nl",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "no",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "np",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "nz",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "om",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "pa",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "pe",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ph",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "pk",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "pl",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "pt",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "py",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "qa",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ro",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "rs",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "sa",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "se",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "sg",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "si",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "sk",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "sn",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "sv",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "th",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "tn",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "tr",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "tt",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "tw",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ua",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "uk",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "us",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "uy",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "ve",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "vn",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "worldwide",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "za",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "zm",
+      "mentions": 0,
+      "visibility": 0
+    },
+    {
+      "database": "zw",
+      "mentions": 0,
+      "visibility": 0
+    }
+  ]
+}
