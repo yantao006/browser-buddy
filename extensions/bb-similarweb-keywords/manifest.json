@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "BB Similarweb Keywords",
-  "version": "0.9.13",
+  "version": "0.9.14",
   "description": "从 sim.3ue.co / sem.3ue.co 导出关键词表、关键词生成器、网站表现、着陆页、Semrush 域名概览、引荐域名、反向链接或自然排名。",
   "action": {
     "default_popup": "popup.html",

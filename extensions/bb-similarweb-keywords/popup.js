@@ -202,7 +202,7 @@ function applyKind(kind) {
     pagesRow.classList.add("hidden");
     fillBtn.classList.remove("hidden");
     btn.textContent = "导出着陆页到 ZIP";
-    statusEl.textContent = "可先填入五个域名。导出：首页保底，末条 < 10k 或满 5 页停；>= 10k 抽日趋势和关键词。";
+    statusEl.textContent = "会先切到最后 28 天数。可先填入五个域名。导出：首页保底，末条 < 10k 或满 5 页停；>= 10k 抽日趋势和关键词。";
   } else {
     pagesRow.classList.remove("hidden");
     fillBtn.classList.add("hidden");
@@ -237,6 +237,7 @@ function progressMessage(progress, filename) {
     "keywords-trend": "关键词趋势",
     switch: "切换域名",
     "next-page": "下一页",
+    duration: "最后 28 天数",
   };
   const domain = info.domain ? `（${info.domain}）` : "";
   const page = info.page ? ` 第 ${info.page} 页` : "";

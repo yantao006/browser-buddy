@@ -332,9 +332,10 @@
     }
     const current = currentLandingKeys();
     const same = current.length === domains.length && current.every((name, index) => name === domains[index]);
-    if (same) return { ok: true, unchanged: true, domains };
     const qIndex = hash.indexOf("?");
     const path = qIndex >= 0 ? hash.slice(0, qIndex) : hash;
+    const nextPath = path.replace(/(\/landing-pages-v2\/\*\/\d+\/)[^/?]+/, "$128d");
+    if (same && nextPath === path) return { ok: true, unchanged: true, domains };
     const params = new URLSearchParams(qIndex >= 0 ? hash.slice(qIndex + 1) : "");
     params.set("key", domains.join(","));
     params.set(
@@ -344,9 +345,50 @@
     params.set("selectedDomain", domains[0]);
     if (!params.get("webSource")) params.set("webSource", "Total");
     if (!params.get("selectedPageTab")) params.set("selectedPageTab", "Organic");
-    const nextHash = `${path}?${params.toString()}`;
+    const nextHash = `${nextPath}?${params.toString()}`;
     location.replace(`${location.pathname}${location.search}${nextHash}`);
     return { ok: true, unchanged: false, domains };
+  }
+
+  function landingDurationToken() {
+    const matched = (location.hash || "").match(/landing-pages-v2\/\*\/\d+\/([^/?]+)/);
+    return matched ? decodeURIComponent(matched[1]) : "";
+  }
+
+  function landingDurationButton() {
+    return (
+      document.querySelector(".DurationSelect[data-automation='drop-down-button']") ||
+      document.querySelector(".DurationSelectorDropdown[data-automation='drop-down-button']") ||
+      [...document.querySelectorAll('[data-automation="drop-down-button"]')].find((el) =>
+        /DurationSelect|DurationSelector/.test(String(el.className || "")),
+      ) ||
+      null
+    );
+  }
+
+  function isLandingLast28Days() {
+    if (/^28d$/i.test(landingDurationToken())) return true;
+    return /最后\s*28\s*天数/.test(normText(landingDurationButton()));
+  }
+
+  async function ensureLandingLast28Days() {
+    if (isLandingLast28Days()) return true;
+    const btn = landingDurationButton();
+    if (!btn) return false;
+    btn.click();
+    const item = await waitFor(
+      () =>
+        [...document.querySelectorAll('[data-automation="duration-preset-item"]')].find((el) =>
+          /最后\s*28\s*天数/.test(normText(el)),
+        ),
+      6000,
+    );
+    if (!item) return false;
+    item.click();
+    const switched = await waitFor(() => isLandingLast28Days(), 20000);
+    await waitFor(() => scrapeLandingPage().length > 0, 15000);
+    await sleep(500);
+    return !!switched;
   }
 
   function fileDate() {
@@ -1501,6 +1543,14 @@
       return { ok: false, error: "这一页不是着陆页。请停在着陆页再试。" };
     }
     closeLandingPopup();
+    const mark = (info) => {
+      document.documentElement.dataset.bbProgress = JSON.stringify(info);
+    };
+    mark({ stage: "duration" });
+    const durationOk = await ensureLandingLast28Days();
+    if (!durationOk) {
+      return { ok: false, error: "切不到最后 28 天数。请先在右上角选最后 28 天数再试。" };
+    }
     const tabs = landingDomainTabs();
     const domains = [...new Set((tabs.length ? tabs.map((item) => item.domain) : [selectedDomain()]).filter(Boolean))];
     if (!domains.length) {
@@ -1510,9 +1560,6 @@
     const keywordPages = Math.max(1, Math.min(5, parseInt(opts && opts.keywordPages, 10) || 5));
     const clickFloor = Number(opts && opts.clickFloor) > 0 ? Number(opts.clickFloor) : 10000;
     const out = [];
-    const mark = (info) => {
-      document.documentElement.dataset.bbProgress = JSON.stringify(info);
-    };
     const startedAt = Date.now();
     let landingCount = 0;
     let detailCount = 0;
