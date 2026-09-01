@@ -7,6 +7,7 @@
 仓库：https://github.com/yantao006/browser-buddy
 Release：https://github.com/yantao006/browser-buddy/releases
 当前插件版本看 `extensions/bb-similarweb-keywords/manifest.json` 的 `version`。
+发版：先把该 version 推上主干，再运行 `scripts/release.sh --notes-file notes.md`。
 
 ---
 
