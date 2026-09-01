@@ -2396,65 +2396,111 @@
     return idx >= 0 ? cells[idx] : null;
   }
 
-  function scrapeBestBacklinksPage() {
+  function backlinkType(anchorCell) {
+    if (!anchorCell) return "Follow";
+    const labels = [...anchorCell.querySelectorAll("button,[aria-label]")]
+      .flatMap((el) => [normText(el), el.getAttribute("aria-label") || ""])
+      .map((text) => text.trim())
+      .filter(Boolean);
+    const blob = `${labels.join("\n")}\n${anchorCell.innerText || ""}`;
+    for (const type of ["Sponsored", "UGC", "Nofollow", "Follow"]) {
+      if (new RegExp(`(^|\\s)${type}(?=\\s|$)`, "im").test(blob)) return type;
+    }
+    return "Follow";
+  }
+
+  function backlinkSourceFields(cells) {
+    const sourceCell = cells[1];
+    const sourceLines = ((sourceCell && sourceCell.innerText) || "")
+      .split(/\n+/)
+      .map((line) => line.replace(/\s+/g, " ").trim())
+      .filter(Boolean);
+    const sourceUrl =
+      sourceLines.find(
+        (line) => /\//.test(line) && !/^语言/.test(line) && !/sem\.3ue|semrush\.com|__gmitm/.test(line),
+      ) ||
+      sourceLines.find((line) => /\//.test(line) && !/^语言/.test(line)) ||
+      "";
+    const sourceTitle =
+      sourceLines.find((line) => line && line !== sourceUrl && !/^语言/.test(line) && !/^(EN|ES|FR|TW)$/.test(line)) ||
+      "";
+    return {
+      pageAs: normText(cells[0]),
+      sourceTitle,
+      sourceUrl,
+      externalLinks: normText(cells[2]),
+      internalLinks: normText(cells[3]),
+    };
+  }
+
+  function backlinkTargetFields(anchorCell) {
+    const anchorLinks = [...(anchorCell ? anchorCell.querySelectorAll("a") : [])];
+    const anchorLines = ((anchorCell && anchorCell.innerText) || "")
+      .split(/\n+/)
+      .map((line) => line.replace(/\s+/g, " ").trim())
+      .filter(Boolean);
+    const targetUrl =
+      anchorLines.find((line) => /https?:\/\//.test(line) || /^[\w.-]+\.[a-z]{2,}\//i.test(line)) ||
+      (anchorLinks[1] && (anchorLinks[1].getAttribute("href") || normText(anchorLinks[1]))) ||
+      "";
+    const anchor =
+      anchorLines.find(
+        (line) =>
+          line &&
+          line !== targetUrl &&
+          !/^链接类型/.test(line) &&
+          !/^链接放置/.test(line) &&
+          line !== "文本" &&
+          line !== "内容" &&
+          line !== "站内",
+      ) ||
+      (anchorLinks[0] && normText(anchorLinks[0])) ||
+      "";
+    return { anchor, targetUrl };
+  }
+
+  function scrapeBacklinksPage(includeType) {
     if (!/源页面标题/.test(backlinksHeaderText())) return [];
-    return backlinksTableRows()
-      .map((row) => {
-        let cells = [...row.querySelectorAll('[data-ui-name="Row.Cell"]')];
-        if (cells.length > 7) cells = cells.slice(cells.length - 7);
-        const sourceCell = cells[1];
-        const sourceLinks = [...(sourceCell ? sourceCell.querySelectorAll("a") : [])];
-        const sourceLines = ((sourceCell && sourceCell.innerText) || "")
-          .split(/\n+/)
-          .map((line) => line.replace(/\s+/g, " ").trim())
-          .filter(Boolean);
-        const sourceUrl =
-          sourceLines.find(
-            (line) => /\//.test(line) && !/^语言/.test(line) && !/sem\.3ue|semrush\.com|__gmitm/.test(line),
-          ) ||
-          sourceLines.find((line) => /\//.test(line) && !/^语言/.test(line)) ||
-          "";
-        const sourceTitle =
-          sourceLines.find((line) => line && line !== sourceUrl && !/^语言/.test(line) && !/^(EN|ES|FR|TW)$/.test(line)) ||
-          "";
-        const anchorCell = cells[4];
-        const anchorLinks = [...(anchorCell ? anchorCell.querySelectorAll("a") : [])];
-        const anchorLines = ((anchorCell && anchorCell.innerText) || "")
-          .split(/\n+/)
-          .map((line) => line.replace(/\s+/g, " ").trim())
-          .filter(Boolean);
-        const targetUrl =
-          anchorLines.find((line) => /https?:\/\//.test(line) || /^[\w.-]+\.[a-z]{2,}\//i.test(line)) ||
-          (anchorLinks[1] && (anchorLinks[1].getAttribute("href") || normText(anchorLinks[1]))) ||
-          "";
-        const anchor =
-          anchorLines.find(
-            (line) =>
-              line &&
-              line !== targetUrl &&
-              !/^链接类型/.test(line) &&
-              !/^链接放置/.test(line) &&
-              line !== "文本" &&
-              line !== "内容" &&
-              line !== "站内",
-          ) ||
-          (anchorLinks[0] && normText(anchorLinks[0])) ||
-          "";
-        const blob = row.innerText || "";
-        return {
-          pageAs: normText(cells[0]),
-          sourceTitle,
-          sourceUrl,
-          externalLinks: normText(cells[2]),
-          internalLinks: normText(cells[3]),
-          anchor,
-          targetUrl,
-          firstSeen: normText(cells[5]),
-          lastSeen: normText(cells[6]),
-          status: blob.includes("丢失") ? "丢失" : blob.includes("新增") ? "新增" : "活跃",
-        };
-      })
-      .filter((row) => row.sourceTitle || row.sourceUrl);
+    const results = [];
+    let shared = null;
+    for (const row of backlinksTableRows()) {
+      const rawCells = [...row.querySelectorAll('[data-ui-name="Row.Cell"]')];
+      let anchorCell;
+      let firstSeen;
+      let lastSeen;
+      if (rawCells.length >= 7) {
+        const cells = rawCells.length > 7 ? rawCells.slice(rawCells.length - 7) : rawCells;
+        shared = backlinkSourceFields(cells);
+        anchorCell = cells[4];
+        firstSeen = normText(cells[5]);
+        lastSeen = normText(cells[6]);
+      } else if (rawCells.length === 3 && shared) {
+        [anchorCell] = rawCells;
+        firstSeen = normText(rawCells[1]);
+        lastSeen = normText(rawCells[2]);
+      } else {
+        continue;
+      }
+      const blob = row.innerText || "";
+      const result = {
+        ...shared,
+        ...backlinkTargetFields(anchorCell),
+        firstSeen,
+        lastSeen,
+        status: blob.includes("丢失") ? "丢失" : blob.includes("新增") ? "新增" : "活跃",
+      };
+      if (includeType) result.type = backlinkType(anchorCell);
+      if ((result.sourceTitle || result.sourceUrl) && (result.anchor || result.targetUrl)) results.push(result);
+    }
+    return results;
+  }
+
+  function scrapeAllBacklinksPage() {
+    return scrapeBacklinksPage(true);
+  }
+
+  function scrapeBestBacklinksPage() {
+    return scrapeBacklinksPage(false);
   }
 
   function scrapeOutboundPage() {
@@ -2503,15 +2549,16 @@
     return true;
   }
 
-  async function scrapeSemrushPaged(scrapeFn, keyFn) {
+  async function scrapeSemrushPaged(scrapeFn, keyFn, options = {}) {
     const all = [];
     const seen = new Set();
+    const dedupe = options.dedupe !== false;
     for (let page = 1; page <= 200; page += 1) {
       const rows = scrapeFn();
       if (!rows.length) break;
       for (const row of rows) {
         const key = keyFn(row);
-        if (!key || seen.has(key)) continue;
+        if (!key || (dedupe && seen.has(key))) continue;
         seen.add(key);
         all.push(row);
       }
@@ -2527,18 +2574,71 @@
     return all;
   }
 
-  async function clickBacklinksBest() {
-    if (/ba_mt=active/.test(location.search) && /ba_rel=follow/.test(location.search)) {
-      await waitFor(() => scrapeBestBacklinksPage().length > 0, 12000);
-      return scrapeBestBacklinksPage().length > 0;
-    }
-    const el = [...document.querySelectorAll("span,div,button,a")].find((node) => normText(node) === "最佳");
-    if (!el) return false;
-    (el.closest("button,a,[role='button']") || el).click();
-    const switched = await waitFor(() => /ba_mt=active/.test(location.search), 15000);
+  function backlinksCardGroup() {
+    return [...document.querySelectorAll('[role="radiogroup"]')].find((group) => {
+      const labels = [...group.querySelectorAll('[role="radio"]')].map((radio) =>
+        ((radio.innerText || "").split(/\n+/)[0] || "").trim(),
+      );
+      return ["所有", "最佳", "最新", "丢失且重要"].every((label) => labels.includes(label));
+    });
+  }
+
+  function backlinksCard(label) {
+    const group = backlinksCardGroup();
+    if (!group) return null;
+    return (
+      [...group.querySelectorAll('[role="radio"]')].find(
+        (radio) => (((radio.innerText || "").split(/\n+/)[0] || "").trim() === label),
+      ) || null
+    );
+  }
+
+  function backlinksCardSelected(label) {
+    const card = backlinksCard(label);
+    if (!card) return false;
+    return card.getAttribute("aria-checked") === "true" || /selected/i.test(String(card.className));
+  }
+
+  async function clickBacklinksCard(label) {
+    const card = backlinksCard(label);
+    if (!card) return false;
+    if (!backlinksCardSelected(label)) card.click();
+    const switched = await waitFor(() => backlinksCardSelected(label), 15000);
     await sleep(800);
-    await waitFor(() => scrapeBestBacklinksPage().length > 0, 12000);
-    return !!(switched && scrapeBestBacklinksPage().length);
+    return !!switched;
+  }
+
+  function backlinksTableUnavailable() {
+    return /Data is unavailable|数据不可用|暂无数据|无可用数据/i.test(document.body.innerText || "");
+  }
+
+  async function waitForBacklinksRows(allowEmpty) {
+    let zeroSince = 0;
+    return waitFor(() => {
+      if (backlinksTableUnavailable()) return !!allowEmpty;
+      if (!/源页面标题/.test(backlinksHeaderText())) {
+        zeroSince = 0;
+        return false;
+      }
+      if (backlinksTableRows().length) return true;
+      if (!allowEmpty) return false;
+      if (!zeroSince) zeroSince = Date.now();
+      return Date.now() - zeroSince >= 10000;
+    }, allowEmpty ? 30000 : 15000);
+  }
+
+  async function clickBacklinksAll() {
+    return clickBacklinksCard("所有");
+  }
+
+  async function clickBacklinksBest() {
+    const switched = await clickBacklinksCard("最佳");
+    if (!switched) return false;
+    const card = backlinksCard("最佳");
+    const count = Number.parseInt((((card && card.innerText) || "").match(/[\d,]+/) || [""])[0].replace(/,/g, ""), 10);
+    const expected = count > 0 ? Math.min(100, count) : 1;
+    const ready = await waitFor(() => scrapeBestBacklinksPage().length >= expected, 30000);
+    return !!ready;
   }
 
   function backlinksCsvFiles(domain, packs) {
@@ -2557,13 +2657,32 @@
       ["diff", "变动"],
     ];
     const files = [];
-    const push = (name, columns, rows) => {
-      if (!rows || !rows.length) return;
+    const push = (name, columns, rows, includeEmpty = false) => {
+      if (!rows || (!rows.length && !includeEmpty)) return;
       files.push({ name: `${prefix}-${name}.csv`, columns, rows });
     };
     push("概览", cardCols, packs.kpis);
     push("引荐域名趋势", trendCols, packs.referring);
     push("反向链接趋势", trendCols, packs.backlinkTrend);
+    push(
+      "所有反向链接",
+      [
+        ["index", "序号"],
+        ["type", "链接类型"],
+        ["pageAs", "页面 AS"],
+        ["sourceTitle", "源页面标题"],
+        ["sourceUrl", "源页面 URL"],
+        ["externalLinks", "外部链接"],
+        ["internalLinks", "内部链接"],
+        ["anchor", "锚文本"],
+        ["targetUrl", "目标 URL"],
+        ["firstSeen", "首次发现"],
+        ["lastSeen", "上次发现"],
+        ["status", "状态"],
+      ],
+      packs.all,
+      true,
+    );
     push(
       "最佳反向链接",
       [
@@ -2630,18 +2749,41 @@
       value: String(row.value ?? ""),
       diff: row.diff == null || row.diff === "" ? "" : String(row.diff),
     }));
-    mark({ stage: "best", domain });
-    const bestTabOk = await gotoSemrushPath(
+    mark({ stage: "all", domain });
+    const backlinksTabOk = await gotoSemrushPath(
       "/analytics/backlinks/backlinks/",
-      () => /最佳/.test(document.body.innerText || ""),
+      () => !!backlinksCardGroup(),
     );
-    if (!bestTabOk) {
+    if (!backlinksTabOk) {
       return { ok: false, error: "打不开反向链接表。" };
     }
     await sleep(400);
-    await clickBacklinksBest();
-    const bestReady = await waitFor(() => /源页面标题/.test(backlinksHeaderText()), 15000);
-    if (!bestReady) {
+    const allCardOk = await clickBacklinksAll();
+    if (!allCardOk) {
+      return { ok: false, error: "打不开所有反向链接表。" };
+    }
+    await waitForBacklinksRows(true);
+    const allKey = (row) =>
+      [
+        row.sourceUrl,
+        row.targetUrl,
+        row.anchor,
+        row.type,
+        row.firstSeen,
+        row.lastSeen,
+        row.pageAs,
+        row.externalLinks,
+        row.internalLinks,
+        row.status,
+      ].join("|");
+    if (scrapeAllBacklinksPage().length) {
+      await rewindSemrushPages(scrapeAllBacklinksPage, allKey);
+    }
+    const allRaw = await scrapeSemrushPaged(scrapeAllBacklinksPage, allKey, { dedupe: false });
+    const all = allRaw.map((row, index) => Object.assign({ index: String(index + 1) }, row));
+    mark({ stage: "best", domain, all: all.length });
+    const bestCardOk = await clickBacklinksBest();
+    if (!bestCardOk) {
       return { ok: false, error: "打不开最佳反向链接表。" };
     }
     await sleep(400);
@@ -2650,7 +2792,7 @@
       (row) => `${row.sourceUrl}|${row.targetUrl}|${row.anchor}`,
     );
     const best = bestRaw.map((row, index) => Object.assign({ index: String(index + 1) }, row));
-    mark({ stage: "outbound", domain });
+    mark({ stage: "outbound", domain, all: all.length, best: best.length });
     const outboundOk = await gotoSemrushPath(
       "/analytics/backlinks/outbound-domains/",
       () => /出站链接/.test(backlinksHeaderText()) && /根域名/.test(backlinksHeaderText()),
@@ -2662,7 +2804,7 @@
     const outboundRaw = await scrapeSemrushPaged(scrapeOutboundPage, (row) => row.root);
     const outbound = outboundRaw.map((row, index) => Object.assign({ index: String(index + 1) }, row));
     mark({ stage: "zip", domain });
-    const files = backlinksCsvFiles(domain, { kpis, referring, backlinkTrend, best, outbound });
+    const files = backlinksCsvFiles(domain, { kpis, referring, backlinkTrend, all, best, outbound });
     if (!files.length) {
       return { ok: false, error: "找到了反向链接分析，但读不到可导出的数据。" };
     }
@@ -2677,6 +2819,7 @@
       filename,
       domain,
       files: files.map((file) => file.name),
+      all: all.length,
       best: best.length,
       outbound: outbound.length,
       referringPoints: referring.length,
