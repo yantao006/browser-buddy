@@ -2474,7 +2474,7 @@
         anchorCell = cells[4];
         firstSeen = normText(cells[5]);
         lastSeen = normText(cells[6]);
-      } else if (rawCells.length === 3 && shared) {
+      } else if (includeType && rawCells.length === 3 && shared) {
         [anchorCell] = rawCells;
         firstSeen = normText(rawCells[1]);
         lastSeen = normText(rawCells[2]);

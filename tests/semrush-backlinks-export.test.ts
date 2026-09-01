@@ -224,6 +224,19 @@ async function runBacklinksExport(options: { emptyAll?: boolean } = {}) {
       lastSeen: "2026-08-05",
       type: "Follow",
     },
+    {
+      pageAs: "88",
+      sourceTitle: "Best source",
+      sourceUrl: "best.example/page",
+      externalLinks: "2",
+      internalLinks: "7",
+      anchor: "Best continuation",
+      targetUrl: "seedream-5.io/best-continuation",
+      firstSeen: "2026-02-01",
+      lastSeen: "2026-08-05",
+      type: "Follow",
+      continuation: true,
+    },
   ];
 
   const setPath = (pathname: string, search = "?q=seedream-5.io&searchType=domain") => {
@@ -361,7 +374,9 @@ describe("Semrush backlinks ZIP export", () => {
     expect(continuation[3]).toBe("Source sponsored");
     expect(continuation[4]).toBe("source-three.example/page");
 
-    const bestHeader = run.files.get(bestName!)!.replace(/^\uFEFF/, "").split("\n")[0];
+    const bestCsv = run.files.get(bestName!)!.replace(/^\uFEFF/, "");
+    const bestHeader = bestCsv.split("\n")[0];
+    expect(bestCsv).not.toContain("best-continuation");
     expect(bestHeader).toBe(
       "序号,页面 AS,源页面标题,源页面 URL,外部链接,内部链接,锚文本,目标 URL,首次发现,上次发现,状态",
     );
