@@ -187,7 +187,7 @@ function applyKind(kind) {
     pagesRow.classList.add("hidden");
     fillBtn.classList.add("hidden");
     btn.textContent = "导出反向链接到 ZIP";
-    statusEl.textContent = "概览数字、一年曲线、最佳反向链接和出站域名。";
+    statusEl.textContent = "概览数字、一年曲线、所有反向链接（含链接类型）、最佳反向链接和出站域名。";
   } else if (kind === "organic") {
     pagesRow.classList.add("hidden");
     fillBtn.classList.add("hidden");
@@ -224,6 +224,7 @@ function progressMessage(progress, filename) {
   const info = parseJson(progress) || {};
   const labels = {
     overview: "反向链接概览",
+    all: "所有反向链接",
     best: "最佳反向链接",
     outbound: "出站域名",
     zip: "打包下载",
@@ -253,7 +254,7 @@ function doneMessage(result) {
     return `下载完成\n自然排名 ${result.positions || 0} 条，竞争对手 ${result.competitors || 0} 个\n${name}`;
   }
   if (result.kind === "backlinks") {
-    return `下载完成\n最佳反向链接 ${result.best || 0} 条，出站域名 ${result.outbound || 0} 个\n${name}`;
+    return `下载完成\n所有反向链接 ${result.all || 0} 条，最佳反向链接 ${result.best || 0} 条，出站域名 ${result.outbound || 0} 个\n${name}`;
   }
   if (result.kind === "refdomains") {
     return `下载完成\n${result.rows || 0} 条引荐域名\n${name}`;
