@@ -2631,6 +2631,59 @@
     return clickBacklinksCard("所有");
   }
 
+  function radioFirstLabel(el) {
+    return ((el.innerText || "").split(/\n+/)[0] || "").trim();
+  }
+
+  function backlinksStatusGroup() {
+    return [...document.querySelectorAll('[role="radiogroup"]')].find((group) => {
+      const labels = [...group.querySelectorAll('[role="radio"]')].map(radioFirstLabel);
+      return ["所有", "活跃", "新增", "丢失"].every((label) => labels.includes(label));
+    });
+  }
+
+  function backlinksStatusRadio(label) {
+    const group = backlinksStatusGroup();
+    if (group) {
+      return [...group.querySelectorAll('[role="radio"]')].find((radio) => radioFirstLabel(radio) === label) || null;
+    }
+    return (
+      [...document.querySelectorAll("button,[role='radio']")].find((el) => {
+        if (radioFirstLabel(el) !== label) return false;
+        let node = el.parentElement;
+        for (let i = 0; i < 6 && node; i += 1) {
+          const labels = [...node.querySelectorAll("button,[role='radio']")].map(radioFirstLabel);
+          if (["所有", "活跃", "新增", "丢失"].every((name) => labels.includes(name))) return true;
+          node = node.parentElement;
+        }
+        return false;
+      }) || null
+    );
+  }
+
+  function backlinksStatusSelected(label) {
+    const radio = backlinksStatusRadio(label);
+    if (!radio) return false;
+    return (
+      radio.getAttribute("aria-checked") === "true" ||
+      radio.getAttribute("aria-pressed") === "true" ||
+      /selected/i.test(String(radio.className))
+    );
+  }
+
+  async function clickBacklinksStatus(label) {
+    const radio = backlinksStatusRadio(label);
+    if (!radio) return false;
+    if (!backlinksStatusSelected(label)) radio.click();
+    const switched = await waitFor(() => backlinksStatusSelected(label), 15000);
+    await sleep(800);
+    return !!switched;
+  }
+
+  async function clickBacklinksActiveStatus() {
+    return clickBacklinksStatus("活跃");
+  }
+
   async function clickBacklinksBest() {
     const switched = await clickBacklinksCard("最佳");
     if (!switched) return false;
@@ -2762,6 +2815,10 @@
     if (!allCardOk) {
       return { ok: false, error: "打不开所有反向链接表。" };
     }
+    const activeOk = await clickBacklinksActiveStatus();
+    if (!activeOk) {
+      return { ok: false, error: "选不了活跃反向链接。" };
+    }
     await waitForBacklinksRows(true);
     const allKey = (row) =>
       [
@@ -2779,7 +2836,9 @@
     if (scrapeAllBacklinksPage().length) {
       await rewindSemrushPages(scrapeAllBacklinksPage, allKey);
     }
-    const allRaw = await scrapeSemrushPaged(scrapeAllBacklinksPage, allKey, { dedupe: false });
+    const allRaw = (await scrapeSemrushPaged(scrapeAllBacklinksPage, allKey, { dedupe: false })).filter(
+      (row) => row.status !== "丢失",
+    );
     const all = allRaw.map((row, index) => Object.assign({ index: String(index + 1) }, row));
     mark({ stage: "best", domain, all: all.length });
     const bestCardOk = await clickBacklinksBest();

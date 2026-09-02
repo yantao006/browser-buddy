@@ -228,7 +228,7 @@ https://sem.3ue.co/analytics/backlinks/overview/?q=seedream-4.ai&searchType=doma
 
 - 概览 KPI
 - 一年的引荐域名趋势、反向链接趋势
-- 「所有」反向链接（含 Follow / Nofollow / Sponsored / UGC 链接类型，会翻页；空表仍保留表头）
+- 「所有」反向链接（状态选「活跃」，不含丢失；含 Follow / Nofollow / Sponsored / UGC 链接类型，会翻页；空表仍保留表头）
 - 「最佳」反向链接（会翻页）
 - 出站域名（会翻页）
 
