@@ -187,7 +187,7 @@ function applyKind(kind) {
     pagesRow.classList.add("hidden");
     fillBtn.classList.add("hidden");
     btn.textContent = "导出反向链接到 ZIP";
-    statusEl.textContent = "概览数字、一年曲线、所有反向链接（含链接类型）、最佳反向链接和出站域名。";
+    statusEl.textContent = "概览数字、一年曲线、所有反向链接（活跃，不含丢失）、最佳反向链接和出站域名。";
   } else if (kind === "organic") {
     pagesRow.classList.add("hidden");
     fillBtn.classList.add("hidden");

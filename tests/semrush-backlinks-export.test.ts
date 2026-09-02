@@ -74,7 +74,7 @@ function backlinkTable(rows: BacklinkRow[], page: number, pages: number, emptyMe
   </section>`;
 }
 
-function backlinkCards(selected: "all" | "best"): string {
+function backlinkCards(selected: "all" | "best", status: "all" | "active" | "new" | "lost" = "all"): string {
   const radio = (key: string, label: string, count: string) =>
     `<button role="radio" data-card="${key}" aria-checked="${selected === key}"><div>${label}</div><div>${count}</div></button>`;
   return `<div role="radiogroup" data-group="cards">
@@ -84,10 +84,10 @@ function backlinkCards(selected: "all" | "best"): string {
     ${radio("lost", "丢失且重要", "1")}
   </div>
   <div role="radiogroup" data-group="status">
-    <button role="radio" data-filter="status-all" aria-checked="true">所有</button>
-    <button role="radio" data-filter="active">活跃</button>
-    <button role="radio" data-filter="new">新增</button>
-    <button role="radio" data-filter="lost">丢失</button>
+    <button role="radio" data-filter="status-all" aria-checked="${status === "all"}">所有</button>
+    <button role="radio" data-filter="active" aria-checked="${status === "active"}">活跃</button>
+    <button role="radio" data-filter="new" aria-checked="${status === "new"}">新增</button>
+    <button role="radio" data-filter="lost" aria-checked="${status === "lost"}">丢失</button>
   </div>
   <div role="radiogroup" data-group="type">
     <button role="radio" data-filter="type-all" aria-checked="true">所有</button>
@@ -131,9 +131,11 @@ async function runBacklinksExport(options: { emptyAll?: boolean } = {}) {
   const document = window.document;
   const actions: string[] = [];
   let filterClicks = 0;
+  const clickedFilters: string[] = [];
   let download: DownloadMessage | null = null;
   let route: "overview" | "backlinks" | "outbound" = "backlinks";
   let card: "all" | "best" = "best";
+  let statusFilter: "all" | "active" | "new" | "lost" = "all";
   let page = 1;
 
   const allPages: BacklinkRow[][] = options.emptyAll
@@ -251,9 +253,18 @@ async function runBacklinksExport(options: { emptyAll?: boolean } = {}) {
         <button aria-pressed="true">1 年</button>
       </main>`;
     } else if (route === "backlinks") {
-      const rows = card === "all" ? allPages[page - 1] || [] : bestRows;
+      const rawRows = card === "all" ? allPages[page - 1] || [] : bestRows;
+      const rows =
+        card === "all"
+          ? rawRows.filter((row) => {
+              if (statusFilter === "active") return row.status !== "丢失";
+              if (statusFilter === "new") return row.status === "新增";
+              if (statusFilter === "lost") return row.status === "丢失";
+              return true;
+            })
+          : bestRows;
       const pages = card === "all" ? allPages.length : 1;
-      content = `<main>${backlinkCards(card)}${backlinkTable(
+      content = `<main>${backlinkCards(card, statusFilter)}${backlinkTable(
         rows,
         page,
         pages,
@@ -295,9 +306,16 @@ async function runBacklinksExport(options: { emptyAll?: boolean } = {}) {
         render();
       });
     }
-    for (const button of document.querySelectorAll("[data-filter]")) {
+    for (const button of [...document.querySelectorAll("[data-filter]")] as unknown as HTMLElement[]) {
       button.addEventListener("click", () => {
+        const key = button.dataset.filter || "";
         filterClicks += 1;
+        clickedFilters.push(key);
+        if (key === "active" || key === "new" || key === "lost" || key === "status-all") {
+          statusFilter = key === "status-all" ? "all" : key;
+          page = 1;
+          render();
+        }
       });
     }
     document.querySelector(".SPrevPage")?.addEventListener("click", () => {
@@ -339,22 +357,24 @@ async function runBacklinksExport(options: { emptyAll?: boolean } = {}) {
     actions,
     download: download as unknown as DownloadMessage,
     files: parseStoreZip((download as unknown as DownloadMessage).base64),
+    clickedFilters,
     filterClicks,
     result,
   };
 }
 
 describe("Semrush backlinks ZIP export", () => {
-  it("exports every all-backlinks page with link type before the existing best table", async () => {
+  it("exports every all-backlinks page with the active status filter and link type before the existing best table", async () => {
     const run = await runBacklinksExport();
     const names = [...run.files.keys()];
     const allName = names.find((name) => name.endsWith("-所有反向链接.csv"));
     const bestName = names.find((name) => name.endsWith("-最佳反向链接.csv"));
 
-    expect(run.result).toMatchObject({ ok: true, all: 6, best: 1, outbound: 1 });
+    expect(run.result).toMatchObject({ ok: true, all: 4, best: 1, outbound: 1 });
     expect(run.actions.indexOf("all")).toBeGreaterThan(-1);
     expect(run.actions.indexOf("best")).toBeGreaterThan(run.actions.indexOf("all"));
-    expect(run.filterClicks).toBe(0);
+    expect(run.filterClicks).toBe(1);
+    expect(run.clickedFilters).toEqual(["active"]);
     expect(allName).toBeTruthy();
     expect(bestName).toBeTruthy();
     expect(names.indexOf(allName!)).toBeLessThan(names.indexOf(bestName!));
@@ -364,12 +384,13 @@ describe("Semrush backlinks ZIP export", () => {
     expect(allLines[0]).toBe(
       "序号,链接类型,页面 AS,源页面标题,源页面 URL,外部链接,内部链接,锚文本,目标 URL,首次发现,上次发现,状态",
     );
-    expect(allLines).toHaveLength(7);
+    expect(allLines).toHaveLength(5);
     expect(new Set(allLines.slice(1).map((line) => line.split(",")[1]))).toEqual(
       new Set(["Follow", "Nofollow", "Sponsored", "UGC"]),
     );
     expect(allCsv).toContain("source-four.example/page");
-    expect(allCsv.match(/source-one\.example\/page/g)).toHaveLength(2);
+    expect(allCsv).not.toContain("source-one.example/page");
+    expect(allCsv).not.toContain("丢失");
     const continuation = allLines.find((line) => line.includes("seedream-5.io/continuation"))!.split(",");
     expect(continuation[3]).toBe("Source sponsored");
     expect(continuation[4]).toBe("source-three.example/page");
@@ -390,6 +411,8 @@ describe("Semrush backlinks ZIP export", () => {
 
     expect(run.result).toMatchObject({ ok: true, all: 0, best: 1, outbound: 1 });
     expect(run.actions.indexOf("best")).toBeGreaterThan(run.actions.indexOf("all"));
+    expect(run.filterClicks).toBe(1);
+    expect(run.clickedFilters).toEqual(["active"]);
     expect(allName).toBeTruthy();
     expect(bestName).toBeTruthy();
     expect(run.files.get(allName!)!.replace(/^\uFEFF/, "").split("\n")).toEqual([
